@@ -1,0 +1,365 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- uiView:  -->
+
+
+
+
+    s<div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+            <main-nav>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <page-nav>
+                                    <ul class="nav--list">
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="home.html">
+                                                    <ng-transclude>
+                                                        <span class="icon-home"></span><span
+                                                            class="sr-only ">Home</span>
+                                                    </ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <!-- ngIf: pages.show('speakers') -->
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="speaker.html">
+                                                    <ng-transclude><span class="active">
+                                                            Speakers
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                        <!-- ngIf: pages.show('sessions') -->
+                                        <state-nav-item class=" ng-isolate-scope">
+                                            <li>
+                                                <a href="session.html">
+                                                    <ng-transclude><span class="">
+                                                            Sessions
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <state-nav-item state="overview">
+                                            <li>
+                                                <a href="agenda.html">
+                                                    <ng-transclude><span class="">
+                                                            Agenda
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('overview') -->
+
+                                        <li class="more-list">
+                                            <a href="#" class="nav--more">More</a>
+                                            <div class="nav--drop">
+                                                <ul class="nav--drop--list">
+                                                    <li><a href="videos.html">Videos</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                </ul>
+                                                <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank"
+                                                                class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank"
+                                                                class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/"
+                                                                target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </page-nav>
+                            </div>
+                            <div class="col-md-7">
+                                <ticket-signup>
+                                    <div class="ping-tickets">
+
+
+                                        <!-- <a class="btn btn-primary ng-hide">
+                                                    Buy Ticket
+                                                </a> -->
+                                        <!-- ngIf: ticket.hotelBookingUrl -->
+                                    </div>
+                                </ticket-signup>
+                                <user-nav class="ng-isolate-scope">
+                                    <div class="nav--user">
+                                        <button class="nav--user--toggle icon-user"></button>
+                                        <a class="nav--user--name" href="#">login</a>
+                                        <ul class="nav--list nav--user--list open" style="display:none">
+                                            <li>
+                                                <a href="login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="forgotPassword.html">Forgot Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="callForPapers.html">Call For Speakers</a>
+                                            </li>
+                                            <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                        <a href="/Account/Logout">Logout</a>
+                                                    </li> -->
+                                        </ul>
+                                    </div>
+                                </user-nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </main-nav>
+            <div class="body-bag ">
+                <section class="hero">
+                    <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                    <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                </section>
+            </div>
+        </div>
+        <!-- uiView:  -->
+
+
+
+
+        <div>
+
+
+
+
+
+            <form action="/Angu/StayUpToDate" method="post" novalidate="novalidate"><input data-val="true"
+                    data-val-number="The field AttendeesId must be a number."
+                    data-val-required="The AttendeesId field is required." id="AnguTicket_AttendeesId"
+                    name="AnguTicket.AttendeesId" type="hidden" value="0"><input data-val="true"
+                    data-val-number="The field CodeCampYearId must be a number."
+                    data-val-required="The CodeCampYearId field is required." id="AnguTicket_CodeCampYearId"
+                    name="AnguTicket.CodeCampYearId" type="hidden" value="0"><input id="AnguTicket_Password"
+                    name="AnguTicket.Password" type="hidden" value=""><input data-val="true"
+                    data-val-required="The StayUpToDate field is required." id="AnguTicket_StayUpToDate"
+                    name="AnguTicket.StayUpToDate" type="hidden" value="True"><input data-val="true"
+                    data-val-required="The LiveFeedNotify field is required." id="AnguTicket_LiveFeedNotify"
+                    name="AnguTicket.LiveFeedNotify" type="hidden" value="True"><input data-val="true"
+                    data-val-required="The WinFreeConferencePass field is required."
+                    id="AnguTicket_WinFreeConferencePass" name="AnguTicket.WinFreeConferencePass" type="hidden"
+                    value="False"><input data-val="true" data-val-required="The WinGiftCertificate field is required."
+                    id="AnguTicket_WinGiftCertificate" name="AnguTicket.WinGiftCertificate" type="hidden"
+                    value="False"><input name="__RequestVerificationToken" type="hidden"
+                    value="3NO6-mBWgLKgeP7QglY065PiPXCxuDzDmWz3Z59HcpWcN4OzRTDqZs2Guw5cGClcqUGV28cE96qv_Eg49DeN_peZ-b09Ife4TCu0WGGPGhU1">
+                <div class="container">
+                    <div class="row row-centered">
+                        <div class="col-md-7 col-centered">
+                            <p class="type--lead"><strong></strong></p>
+
+
+                            <header class="heading centered">
+                                <h3 class="color">Keep Up To Date on Angular U Future Events</h3>
+                                <br>
+                                <h3 class="type--lead type--color">Follow us on Twitter: @AngularU</h3>
+
+                            </header>
+
+
+                            <div class="col-sm-8 col-centered">
+                                <div class="form-horizontal">
+
+
+
+
+
+
+                                    <div class="form-group">
+
+
+
+                                        <label for="email" class="col-sm-3 control-label"></label>
+                                        <div class="col-sm-9">
+                                            <span class="type--bigger italic"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+
+
+                                        <label for="email" class="col-sm-3 control-label">Email</label>
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_Email" name="AnguTicket.Email"
+                                                type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first-name" class="col-sm-3 control-label">First Name</label>
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_UserFirstName"
+                                                name="AnguTicket.UserFirstName" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name" class="col-sm-3 control-label">Last Name</label>
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_UserLastName"
+                                                name="AnguTicket.UserLastName" type="text" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="city" class="col-sm-3 control-label">City</label>
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_City" name="AnguTicket.City"
+                                                type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state" class="col-sm-3 control-label">State</label>
+
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="AnguTicket_State" name="AnguTicket.State"
+                                                type="text" value="">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip" class="col-sm-3 control-label">Zip</label>
+                                        <div class="col-sm-3">
+
+                                            <input class="form-control" id="AnguTicket_UserZipCode"
+                                                name="AnguTicket.UserZipCode" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-3 control-label">Country</label>
+
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="AnguTicket_Country"
+                                                name="AnguTicket.Country" type="text" value="">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="job-title" class="col-sm-3 control-label">Company</label>
+
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="AnguTicket_Company"
+                                                name="AnguTicket.Company" type="text" value="">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="job-title" class="col-sm-3 control-label">Job Title</label>
+
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_PrincipleJob"
+                                                name="AnguTicket.PrincipleJob" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="job-title" class="col-sm-3 control-label">Phone Number</label>
+
+                                        <div class="col-sm-9">
+
+                                            <input class="form-control" id="AnguTicket_PhoneNumber"
+                                                name="AnguTicket.PhoneNumber" type="text" value="">
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div id="captchaid" class="col-sm-8 col-centered ">
+
+
+                                <script type="text/javascript">
+                                    var RecaptchaOptions = {
+                                        theme: 'white' // Make sure there is no trailing ',' at the end of the RecaptchaOptions dictionary
+                                    };
+                                </script>
+
+                                <script type="text/javascript"
+                                    src="https://www.google.com/recaptcha/api/challenge?k=6LcrXN4SAAAAAG4gTUSUCzyfaFE4-yJOIXq86PdW">
+
+                                    </script>
+                                <noscript>
+                                    <iframe
+                                        src="https:://www.google.com/recaptcha/api/noscript?k=6LcrXN4SAAAAAG4gTUSUCzyfaFE4-yJOIXq86PdW"
+                                        height="300" width="500" frameborder="0"></iframe>
+                                    <br>
+                                    <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                                    <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+                                </noscript>
+
+                                <br>
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-8 col-centered">
+                                    <button id="saveOnly" type="button"
+                                        class="btn btn-primary btn-lg xcenter-block">Save</button>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

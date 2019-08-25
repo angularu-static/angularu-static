@@ -1,0 +1,218 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+    
+    
+    <body data-gr-c-s-loaded="true" style="">
+    
+        
+    
+    
+    
+        <!-- uiView:  -->
+    
+    
+    
+    
+        <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+            <!-- uiView: header -->
+            <div ui-view="header" class="ng-scope">
+                <main-nav class="ng-scope ng-isolate-scope"><nav class="nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+              <nav-toggle ng-click="nav.toggle()"><button class="nav--toggle icon-nav">
+                                                      
+                  
+    
+                                               <a href="/">       <span class="icon-burger"></span></a>
+                  
+                  
+                  
+    
+                                                  </button>
+    </nav-toggle>
+            <page-nav open="nav.isOpen" class="ng-isolate-scope"><ul class="nav--list" ng-class="{'open': pages.open}">
+      <state-nav-item state="home" class="ng-isolate-scope"><li ng-class="{active: link.active}" class="active">
+      <a ui-sref="home" href="/">
+        <ng-transclude>
+        <span class="icon-home ng-scope"></span><span class="sr-only ng-scope">Home</span>
+      </ng-transclude>
+      </a>
+    </li></state-nav-item>
+      <!-- ngIf: pages.show('speakers') --><state-nav-item state="speakers" ng-if="pages.show('speakers')" class="ng-scope ng-isolate-scope"><li ng-class="{active: link.active}">
+      <a ui-sref="speakers" href="speaker.html">
+        <ng-transclude><span class="ng-scope">
+        Speakers
+      </span></ng-transclude>
+      </a>
+    </li></state-nav-item><!-- end ngIf: pages.show('speakers') -->
+      <!-- ngIf: pages.show('sessions') --><state-nav-item state="sessions" ng-if="pages.show('sessions')" class="ng-scope ng-isolate-scope"><li ng-class="{active: link.active}">
+      <a ui-sref="sessions" href="session.html">
+        <ng-transclude><span class="ng-scope">
+        Sessions
+      </span></ng-transclude>
+      </a>
+    </li></state-nav-item><!-- end ngIf: pages.show('sessions') -->
+      <!-- ngIf: pages.show('pricing') -->
+                                                                     <!-- ngIf: pages.show('fun') --><state-nav-item state="fun" ng-if="pages.show('fun')" class="ng-scope ng-isolate-scope">
+     <li ng-class="{active: link.active}">
+        <a ui-sref="fun" href="/">
+        <ng-transclude><span class="ng-scope">
+        AGENDA
+        </span></ng-transclude>
+        </a>
+    </li>                                                                                          
+                                                                                                         
+    <li ng-class="{active: link.active}">
+        <a ui-sref="fun" href="#">
+        <ng-transclude><span class="ng-scope">
+        Fun
+        </span></ng-transclude>
+        </a>
+    </li>
+                                                                                                     </state-nav-item><!-- end ngIf: pages.show('fun') -->
+                                                                     
+                                                                     <li>
+                                                                         <a href="videos.html">Videos</a>
+                                                                     </li>
+     
+    
+    
+    </ul>
+    </page-nav>
+          </div>
+    
+        </div>
+      </div>
+    </nav>
+    </main-nav>
+                <div class="body-bag ng-scope">
+                      <a href="/">   
+                    <section class="hero" style="">
+                        <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                        <span ng-click="googleMap()" class="hero--extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>
+                    </section></a>
+                </div>
+            </div>
+    
+    
+    
+    
+            <!-- uiView:  -->
+    
+    
+    
+    
+            <div>
+                
+    
+    
+    
+    <div id="home" class="container">
+    
+        <div class="row row-centered">
+            <div class="col-md-9 col-centered">
+                <h2 class="type--lead">
+                    <span class="type--color"><a href="videos.html">Back To All Videos</a></span>
+                </h2>
+    
+                <h3 class="text-center"><span class="type--color" style="color: #00487F;">
+                    <br>
+                    <a class="btn btn-primary btn-lg xcenter-block" href="liveFeedNotify.html">Signup to be Notified of Future Events</a>
+                   
+                </span></h3>
+    
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+                <div class="content--section">
+    
+                    <div class="social" style="margin-bottom: 5px;">
+    
+                        <h4>Share This On</h4>
+                        <ul>
+                            <li><a href="http://twitter.com/home?status=Check+Out+'Brad+Green+Talks+Directives,+Controllers+become+Components+in+Angular+2'+at+@AngularU+https://AngularU.com/Video/2015sf/brad-green-talks-directives-controllers-become-components-in-angular-2+@bradlygreen" target="_blank" class="icon-twitter"></a></li>
+                        </ul>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <h3 class="type--lead type--color"><a href="https://angularu.com/ng/session/2015sf/angular-2-roadmap-update">Brad Green Talks Directives, Controllers become Components in Angular 2</a></h3>
+                    </div>
+    
+    
+    
+                    <style>
+                        .embed-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+    
+                        .embed-container iframe, .embed-container object, .embed-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    </style>
+                    <div class="embed-container">
+                        
+                            <iframe src="https://player.vimeo.com/video/128435293" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                    </div>
+                    
+                  
+                    
+                    
+    
+                    <br>
+                    <h2 class="type--lead">Brad Green, who runs the Google Angular team talks about (among other things) how Angular 2 improves on directives and controllers with components.</h2>
+                    
+    
+                </div>
+    
+    
+    
+    
+    
+    
+            </div>
+    
+            
+    
+            
+    
+    
+            
+    
+            
+            
+    
+    
+    </div></div></body></html>

@@ -1,0 +1,429 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true" style="">
+
+    <!-- uiView:  --><div ui-view="" ui-view-name="entry-view" class="ng-scope"><div>
+            <main-nav>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <page-nav>
+                                    <ul class="nav--list">
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="home.html">
+                                                    <ng-transclude>
+                                                        <span class="icon-home"></span><span
+                                                            class="sr-only ">Home</span>
+                                                    </ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <!-- ngIf: pages.show('speakers') -->
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="speaker.html">
+                                                    <ng-transclude><span class="active">
+                                                            Speakers
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                        <!-- ngIf: pages.show('sessions') -->
+                                        <state-nav-item class=" ng-isolate-scope">
+                                            <li>
+                                                <a href="session.html">
+                                                    <ng-transclude><span class="">
+                                                            Sessions
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <state-nav-item state="overview">
+                                            <li>
+                                                <a href="agenda.html">
+                                                    <ng-transclude><span class="">
+                                                            Agenda
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('overview') -->
+
+                                        <li class="more-list">
+                                            <a href="#" class="nav--more">More</a>
+                                            <div class="nav--drop">
+                                                <ul class="nav--drop--list">
+                                                    <li><a href="videos.html">Videos</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                </ul>
+                                                <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank"
+                                                                class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank"
+                                                                class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/"
+                                                                target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </page-nav>
+                            </div>
+                            <div class="col-md-7">
+                                <ticket-signup>
+                                    <div class="ping-tickets">
+
+
+                                        <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                        <!-- ngIf: ticket.hotelBookingUrl -->
+                                    </div>
+                                </ticket-signup>
+                                <user-nav class="ng-isolate-scope">
+                                    <div class="nav--user">
+                                        <button class="nav--user--toggle icon-user"></button>
+                                        <a class="nav--user--name" href="#">login</a>
+                                        <ul class="nav--list nav--user--list open" style="display:none">
+                                            <li>
+                                                <a href="login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="forgotPassword.html">Forgot Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="callForPapers.html">Call For Speakers</a>
+                                            </li>
+                                            <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                        </ul>
+                                    </div>
+                                </user-nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </main-nav>
+            <div class="body-bag ">
+                <section class="hero">
+                    <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                    <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                </section>
+            </div>
+        </div><div ui-view="" autoscroll="" class="ng-scope"><div id="session-details" class="container ng-scope">
+  <!--<div class="separator">-->
+    <!--<span class="separator&#45;&#45;icon icon-search"></span>-->
+  <!--</div>-->
+  <!--<h2 class="type&#45;&#45;lead">Session details</h2>-->
+  <section class="session-details">
+    <div class="heading">
+      <h3 class="color ng-binding">Build Awesome Apps with Firebase &amp; Angular <span class="ng-binding">by Sara Robinson</span></h3>
+    </div>
+
+    <div class="speaker-details--desc">
+      <!-- ngIf: details.showSchedule --><span class="speaker-details--date ng-binding ng-scope" ng-if="details.showSchedule">
+        Tuesday 1:00 PM to 1:25 PM
+      </span><!-- end ngIf: details.showSchedule -->
+      &nbsp;
+      <span class="label label-default ng-binding"></span>
+      <span ng-show="details.session.sessionsMaterialUrl.length > 0"><a class="type--color" target="_blank" ng-href="https://angular-u.firebaseapp.com" href="https://angular-u.firebaseapp.com">Download&nbsp;Materials</a></span>
+    </div>
+
+    <p description="description" for="details.session" class="ng-isolate-scope"><span ng-bind-html="description.content" class="list--squared ng-binding">Firebase is a platform that lest you store and sync data instantly, authenticate users, and easily deploy your web app. Learn how you can use Firebase to add a backend to your Angular app in minutes. Sara will demonstrate how to get started with Firebase and AngularFire, Firebase's official binding for Angular. At the end she'll risk it all by live coding and deploying an app with Firebase and Angular!
+</span>
+</p>
+
+    <iframe width="440" height="250" ng-show="details.youTubeCodeLen > 1" src="https://www.youtube.com/embed/0Z1QYfRox-g?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+
+    <!--<iframe width="778" height="474" src="https://www.youtube.com/embed/aHGmj_fqPLE" frameborder="0" allowfullscreen></iframe>-->
+
+    <!--<div class="text-center">-->
+    <div>
+      <div class="social colored">
+        <h3>Share: </h3>
+          <ul>
+          <!--<li><a ng-href="http://twitter.com/home?status={{details.tweetLine}}" target="_blank" class="icon-twitter"></a></li>-->
+          <li><a ng-href="http://twitter.com/home?status=http://twitter.com:80/home?status=Build+Awesome+Apps+with+Firebase+%26+Angular++https%3a%2f%2fangularu.com%2fng%2fsession%2f2015sf%2fbuild-awesome-apps-with-firebase-angular+Tues+1%3a00+PM+Speaker%3a+Sara+Robinson++%40SRobTweets+%23angularu+%40AngularU+" target="_blank" class="icon-twitter" href="http://twitter.com/home?status=http://twitter.com:80/home?status=Build+Awesome+Apps+with+Firebase+%26+Angular++https%3a%2f%2fangularu.com%2fng%2fsession%2f2015sf%2fbuild-awesome-apps-with-firebase-angular+Tues+1%3a00+PM+Speaker%3a+Sara+Robinson++%40SRobTweets+%23angularu+%40AngularU+"></a></li>
+          <!--<li><a ng-href="{{details.tweetLineFull}}" target="_blank" class="icon-calendar"></a></li>-->
+          <!--<li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-fb"></a></li>-->
+          <!--<li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank"  target="_blank" class="icon-gplus"></a></li>-->
+        </ul>
+      </div>
+
+      <div class="social colored">
+        <h3>Add to Google Calendar: </h3>
+        <ul>
+         <li><a title="Add this Session to your Google calendar" ng-href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20150623T200000Z%2f20150623T203000Z&amp;sprop=website%3ahttps%3a%2f%2fangularu.com&amp;sprop=name:Angular+U&amp;text=Angular+U+-+Build%20Awesome%20Apps%20with%20Firebase%20%26%20Angular+by+Sara%20Robinson&amp;location=Hyatt%20Regency%20San%20Francisco%20Airport%201333%20Old%20Bayshore%20Hwy%20Burlingame%2C%20CA%2094010&amp;details=For%20full%20details%20see%3A%0Ahttps%3A%2F%2Fangularu.com%2Fng%2F%2FSession%2F2015sf%2Fbuild-awesome-apps-with-firebase-angular" class="icon-calendar" target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20150623T200000Z%2f20150623T203000Z&amp;sprop=website%3ahttps%3a%2f%2fangularu.com&amp;sprop=name:Angular+U&amp;text=Angular+U+-+Build%20Awesome%20Apps%20with%20Firebase%20%26%20Angular+by+Sara%20Robinson&amp;location=Hyatt%20Regency%20San%20Francisco%20Airport%201333%20Old%20Bayshore%20Hwy%20Burlingame%2C%20CA%2094010&amp;details=For%20full%20details%20see%3A%0Ahttps%3A%2F%2Fangularu.com%2Fng%2F%2FSession%2F2015sf%2Fbuild-awesome-apps-with-firebase-angular"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- ngRepeat: speaker in details.speakers --><div class="speaker-details row ng-scope" ng-repeat="speaker in details.speakers">
+    <div class="speaker-details--image col-sm-3">
+      <img ng-src="assets/images/speaker/20150226041500-31679.jpg" alt="Sara Robinson" src="assets/images/speaker/20150226041500-31679.jpg">
+    </div>
+    <div class="speaker-details--info col-sm-9">
+      <section>
+        <div class="heading">
+          <a ui-sref="speaker(speaker.$stateParams())" href="details/sara-robinson.html">
+            <h3 class="color ng-binding">Sara Robinson</h3>
+          </a>
+        </div>
+        <h4 class="speaker-details--desc italic ng-binding">Sara is a Developer Advocate and realtime aficionado on the Firebase team at Google.</h4>
+        <p speaker-bio="" speaker="speaker" class="ng-isolate-scope"><span ng-bind-html="bio.content" class="ng-binding">Sara is a Developer Advocate on the Firebase team at Google, where she helps with developer relations through online content, outreach and events. She has a bachelor’s degree in Business and International Studies from Brandeis University. Before Firebase, she worked as an analyst at Sandbox Industries, a venture firm and startup foundry. She's passionate about learning to code, running, and finding the best ice cream in SF.</span>
+</p>
+      </section>
+    </div>
+  </div><!-- end ngRepeat: speaker in details.speakers -->
+
+  <!--<p>X</p> seems videoUrl not always working   -->
+  <!--<div class="inline-buttons text-small" ng-show="details.session.videoUrl">-->
+    <!--<a href="{{ details.session.videoUrl}}" class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the video</a>-->
+    <!--<a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>-->
+  <!--</div>-->
+
+
+
+
+  <div class="nav--section container">
+
+    <div>
+      <ul class="list--block">
+
+        <a class="type--color ng-hide" target="_blank" ng-show="details.sessiondisplayitem &amp;&amp; details.sessiondisplayitem.length > 0" href="https://plus.google.com/u/0/communities/100721362580915494668" alt="Photo Gallery on Community Site">Community Site With All Photos</a>
+
+
+        <!-- ngRepeat: item in details.sessiondisplayitem | orderBy:'sequence' -->
+
+      </ul>
+    </div>
+  </div>
+
+
+  <!--<div id="faq" class="nav&#45;&#45;section container">-->
+    <!--<div class="separator">-->
+      <!--<span class="separator&#45;&#45;icon icon-question">?</span>-->
+    <!--</div>-->
+
+    <!--<div>-->
+      <!--<h2 class="type&#45;&#45;lead">FAQ</h2>-->
+      <!--<ul class="list&#45;&#45;block list&#45;&#45;centered">-->
+        <!--<li ng-repeat="item in details.sessiondisplayitem">-->
+
+
+
+          <!--<p><strong>Question: {{item.id}}</strong></p>-->
+
+          <!--<p>Answer: {{item.title}}</p>-->
+
+          <!--<div ng-show="item.sessionDisplayItemTypeName === 'Image'">-->
+              <!--<img ng-src="{{item.imageSrc}}" />-->
+          <!--</div>-->
+
+          <!--<div ng-showxxx="item.sessionDisplayItemTypeName === 'YouTube'">-->
+            <!--<iframe  width="440" height="250"-->
+                     <!--src="{{item.youTubeIframeSrc}}"-->
+                     <!--frameborder="0" allowfullscreen></iframe>-->
+          <!--</div>-->
+
+
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<!-- uiView: footer --><div ui-view="footer" class="ng-scope"><div id="sponsors" class="nav--section container ng-scope">
+  <div class="separator">
+    <span class="separator--icon icon-heart"></span>
+  </div>
+
+
+  <h2 class="type--lead">Premiere Sponsor</h2>
+  <ul class="sponsor--list">
+    <li class="sponsor sponsor--premiere">
+      <a href="http://rangle.io/" target="_blank"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/rangleio-logo-rgb.jpg" alt="Rangle.io" src="https://angularu.com/content/ng/angu/images/rangleio-logo-rgb.jpg"></a>
+    </li>
+    <!--<li class="sponsor sponsor&#45;&#45;premiere">-->
+      <!--<a ng-href="http://go.rangle.io/women?utm_campaign=Women%27s%20Initiative%20AngularU%20Contest&utm_medium=web&utm_source=AngularU%20Website%20News" target="_blank"><img class="sponsor&#45;&#45;img"-->
+                                                                                                                                                                            <!--ng-src="https://angularu.com/miscpages/AU-contest-au-ad.jpg"-->
+                                                                                                                                                                            <!--alt="Rangle.io Woman who code contest"></a>-->
+    <!--</li>-->
+  </ul>
+
+
+
+  <h2 class="type--lead">Gold Sponsors</h2>
+  <ul class="sponsor--list">
+    <li class="sponsor sponsor--gold">
+      <a ng-href="http://form.io/" target="_blank" href="http://form.io/"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/formio-logo-full.png" alt="formio" src="https://angularu.com/content/ng/angu/images/formio-logo-full.png"></a>
+    </li>
+    <li class="sponsor sponsor--gold">
+      <a ng-href="http://orcsweb.com/" target="_blank" href="http://orcsweb.com/"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/orcsweb.png" alt="Orcsweb" src="https://angularu.com/content/ng/angu/images/orcsweb.png"></a>
+    </li>
+
+    <li class="sponsor sponsor--gold">
+      <a ng-href="https://microsoft.com" target="_blank" href="https://microsoft.com"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/mslogo.png" alt="Microsoft" src="https://angularu.com/content/ng/angu/images/mslogo.png"></a>
+    </li>
+
+  </ul>
+
+  <h2 class="type--lead">Silver Sponsors</h2>
+  <ul class="sponsor--list">
+    <li class="sponsor sponsor--silver">
+      <a ng-href="http://pluralsight.com/" target="_blank" href="http://pluralsight.com/"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png" alt="Puralsight" src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png"></a>
+    </li>
+
+    <li class="sponsor sponsor--silver">
+      <a ng-href="https://developers.braintreepayments.com" target="_blank" href="https://developers.braintreepayments.com"><img class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png" alt="Braintree PayPal" src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png"></a>
+    </li>
+
+
+
+
+  </ul>
+
+
+
+  <h2 class="type--lead">Media Partners</h2>
+  <ul class="sponsor--list">
+    <li class="sponsor sponsor--silver">
+      <a ng-href="https://www.airpair.com/angularjs " target="_blank" href="https://www.airpair.com/angularjs"><img class="sponsor--img" ng-src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250" alt="AirPair" src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250"></a>
+    </li>
+  </ul>
+
+  <!--<ul class="sponsor&#45;&#45;list">-->
+  <!--<li class="sponsor sponsor&#45;&#45;gold">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--<li class="sponsor sponsor&#45;&#45;gold">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--</ul>-->
+
+  <!--<ul class="sponsor&#45;&#45;list">-->
+  <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+  <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+  <!--</li>-->
+  <!--</ul>-->
+
+  <div class="text-center">
+    <a ng-href="mailto:sponsor@angularu.com" class="btn btn-primary btn-lg" href="mailto:sponsor@angularu.com">Become a sponsor</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer ng-scope">
+  <div class="footer--top">
+
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-md-7">-->
+        <!--<div class="ping-tickets">-->
+        <!--<label for="pingMeEmail2">Ping me when tickets go on sale:</label>-->
+        <!--<div class="input-group">-->
+        <!--<input type="text" class="form-control" id="pingMeEmail2" class="input-" ng-model="pingMeEmailAddress" name="pingMeEmail" placeholder="My Email">-->
+        <!--<span class="input-group-btn">-->
+        <!--<button ng-click="$scope.anguPingMe" class="btn btn-primary" type="button">OK</button>-->
+        <!--</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="col-md-12 footer--contact">
+          <a ng-href="https://angularu.com/about/Privacy" href="https://angularu.com/about/Privacy">Privacy</a>
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <a ng-href="https://angularu.com/about/CodeOfConduct" href="https://angularu.com/about/CodeOfConduct">Code of Conduct</a>
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <a ng-href="mailto:service2015@angularu.com" href="mailto:service2015@angularu.com">Contact us</a>
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <div class="social alt">
+            <h4>Follow us on:</h4>
+            <ul>
+              <li><a ng-href="http://twitter.com/angularu" target="_blank" class="icon-twitter" href="http://twitter.com/angularu"></a></li>
+              <li><a ng-href="https://www.facebook.com/angularu" target="_blank" class="icon-fb" href="https://www.facebook.com/angularu"></a></li>
+              <li><a ng-href="https://plus.google.com/u/0/communities/100721362580915494668" target="_blank" class="icon-gplus" href="https://plus.google.com/u/0/communities/100721362580915494668"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+</div>
+</div>
+
+    
+
+    
+    
+
+
+ 
+
+
+        
+    
+
+
+
+
+   
+
+
+</body></html>

@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- uiView:  -->
+
+
+
+
+    <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+                <main-nav>
+                    <nav class="nav">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <page-nav>
+                                        <ul class="nav--list">
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="home.html">
+                                                        <ng-transclude>
+                                                            <span class="icon-home"></span><span
+                                                                class="sr-only ">Home</span>
+                                                        </ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <!-- ngIf: pages.show('speakers') -->
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="speaker.html">
+                                                        <ng-transclude><span class="active">
+                                                                Speakers
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                            <!-- ngIf: pages.show('sessions') -->
+                                            <state-nav-item class=" ng-isolate-scope">
+                                                <li>
+                                                    <a href="session.html">
+                                                        <ng-transclude><span class="">
+                                                                Sessions
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <state-nav-item state="overview">
+                                                <li>
+                                                    <a href="agenda.html">
+                                                        <ng-transclude><span class="">
+                                                                Agenda
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('overview') -->
+    
+                                            <li class="more-list">
+                                                <a href="#" class="nav--more">More</a>
+                                                <div class="nav--drop">
+                                                    <ul class="nav--drop--list">
+                                                    <li><a href="videos.html">Videos</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    </ul>
+                                                    <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </page-nav>
+                                </div>
+                                <div class="col-md-7">
+                                    <ticket-signup>
+                                        <div class="ping-tickets">
+    
+    
+                                            <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                            <!-- ngIf: ticket.hotelBookingUrl -->
+                                        </div>
+                                    </ticket-signup>
+                                    <user-nav class="ng-isolate-scope">
+                                        <div class="nav--user">
+                                            <button class="nav--user--toggle icon-user"></button>
+                                            <a class="nav--user--name" href="#">login</a>
+                                            <ul class="nav--list nav--user--list open" style="display:none">
+                                                <li>
+                                                    <a href="login.html">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                </li>
+                                                <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </user-nav>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </main-nav>
+                <div class="body-bag ">
+                    <section class="hero">
+                        <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                        <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                    </section>
+                </div>
+            </div>
+        <!-- uiView:  -->
+        <div>
+
+            <div class="container">
+                <div class="row row-centered">
+                    <div class="col-md-7 col-centered">
+
+                        <section class="contactInfo">
+
+                            <strong>Your Privacy</strong>
+                            <p>Your privacy is important to us. To better protect your privacy we provide this notice
+                                explaining our online information practices and the choices you can make about the way
+                                your information is collected and used. To make this notice easy to find, we make it
+                                available on our homepage and at every point where personally identifiable information
+                                may be requested.</p>
+
+                            <strong>Collection of Personal Information</strong>
+
+                            <p>When visiting our site, the IP address used to access the site will be logged along with
+                                the dates and times of access. This information is purely used to analyze trends,
+                                administer the site, track users movement and gather broad demographic information for
+                                internal use. Most importantly, any recorded IP addresses are not linked to personally
+                                identifiable information.</p>
+
+                            <strong>Links to third party Websites</strong>
+
+                            <p>We have included links on this site for your use and reference. We are not responsible
+                                for the privacy policies on these websites. You should be aware that the privacy
+                                policies of these sites may differ from our own.</p>
+
+                            <strong>Changes to this Privacy Statement</strong>
+
+
+                            <p>The contents of this statement may be altered at any time, at our discretion.</p>
+
+                            <p>If you have any questions regarding this privacy policy you may contact us at
+                                service@siliconvalley-codecamp.com.</p>
+
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

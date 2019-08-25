@@ -1,0 +1,1906 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+
+<body>
+
+    <!-- uiView:  -->
+    <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+                <main-nav>
+                    <nav class="nav">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <page-nav>
+                                        <ul class="nav--list">
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="home.html">
+                                                        <ng-transclude>
+                                                            <span class="icon-home"></span><span
+                                                                class="sr-only ">Home</span>
+                                                        </ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <!-- ngIf: pages.show('speakers') -->
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="speaker.html">
+                                                        <ng-transclude><span class="active">
+                                                                Speakers
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                            <!-- ngIf: pages.show('sessions') -->
+                                            <state-nav-item class=" ng-isolate-scope">
+                                                <li>
+                                                    <a href="session.html">
+                                                        <ng-transclude><span class="">
+                                                                Sessions
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <state-nav-item state="overview">
+                                                <li>
+                                                    <a href="agenda.html">
+                                                        <ng-transclude><span class="">
+                                                                Agenda
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('overview') -->
+    
+                                            <li class="more-list">
+                                                <a href="#" class="nav--more">More</a>
+                                                <div class="nav--drop">
+                                                    <ul class="nav--drop--list">
+                                                    <li class="active"><a href="videos.html">Videos</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    </ul>
+                                                    <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </page-nav>
+                                </div>
+                                <div class="col-md-7">
+                                    <ticket-signup>
+                                        <div class="ping-tickets">
+    
+    
+                                            <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                            <!-- ngIf: ticket.hotelBookingUrl -->
+                                        </div>
+                                    </ticket-signup>
+                                    <user-nav class="ng-isolate-scope">
+                                        <div class="nav--user">
+                                            <button class="nav--user--toggle icon-user"></button>
+                                            <a class="nav--user--name" href="#">login</a>
+                                            <ul class="nav--list nav--user--list open" style="display:none">
+                                                <li>
+                                                    <a href="login.html">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                </li>
+                                                <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </user-nav>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </main-nav>
+                <div class="body-bag ">
+                    <section class="hero">
+                        <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                        <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                    </section>
+                </div>
+            </div>
+        <!-- uiView:  -->
+        <div ui-view="" autoscroll="" class="ng-scope">
+            <div id="videos" class="container ng-scope">
+
+
+                <!--<div class="separator">-->
+                <!--<span class="separator&#45;&#45;icon icon-code"></span>-->
+                <!--</div>-->
+
+
+                <!--<ul class="speakers">-->
+                <!--<li class="row" ng-repeat="video in list.videos">-->
+                <!--<p>{{ video.vimeoId }}</p>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+
+
+                <h1 class="type--lead" ng-show="list.videosSessions.length > 0">Session Recordings</h1>
+
+                <div class="persona--container">
+
+
+                    <!-- Session Videos -->
+                    <!-- ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="angular-2-roadmap-update.html"
+                                target="_blank">Angular 2 Roadmap Update</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/aHGmj_fqPLE?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="aHGmj_fqPLE" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/aHGmj_fqPLE/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/aHGmj_fqPLE/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="angular-2-roadmap-update.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Angular+2+Roadmap+Update'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-2-roadmap-update+@igorminar+@bradlygreen+@mhevery"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Igor Minar, Brad Green, Misko Hevery<br>
+                            Recorded: Monday 9:00 AM to 10:45 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                target="_blank">Dan and John Bringing Their View On The Latest In Angular</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/XQzehz5i4Rg?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="XQzehz5i4Rg" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/XQzehz5i4Rg/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/XQzehz5i4Rg/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Dan+and+John+Bringing+Their+View+On+The+Latest+In+Angular'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/dan-and-john-bringing-their-view-on-the-latest-in-angular+@DanWahlin+@John_Papa"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Dan Wahlin, John Papa<br>
+                            Recorded: Monday 11:00 AM to Noon June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="http://rangle.io/" target="_blank" class="type--color ng-binding"
+                                href="http://rangle.io/">RANGLE.IO</a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="angular-2-speed-run.html"
+                                target="_blank">Angular 2 Speed Run</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/7HJilEYrTqY?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="7HJilEYrTqY" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/7HJilEYrTqY/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/7HJilEYrTqY/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="angular-2-speed-run.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Angular+2+Speed+Run'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-2-speed-run+@johnlindquist"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">John Lindquist<br>
+                            Recorded: Monday 1:00 PM to 1:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                target="_blank">ng6 Why You Should Use ES6 with Angular Today</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/wlNEKHDbK5E?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="wlNEKHDbK5E" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/wlNEKHDbK5E/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/wlNEKHDbK5E/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'ng6+Why+You+Should+Use+ES6+with+Angular+Today'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/ng6-why-you-should-use-es6-with-angular-today+@scotups"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Scott Moss<br>
+                            Recorded: Monday 1:30 PM to 1:55 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="http://rangle.io" target="_blank" class="type--color ng-binding"
+                                href="http://rangle.io">Rangle.io</a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="migrating-to-angular2.html"
+                                target="_blank">Migrating to Angular2</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/KWz7IAm35UM?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="KWz7IAm35UM" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/KWz7IAm35UM/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/KWz7IAm35UM/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="migrating-to-angular2.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Migrating+to+Angular2'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/migrating-to-angular2+@_davideast"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">David East<br>
+                            Recorded: Monday 2:00 PM to 2:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="dominating-shadow-dom.html"
+                                target="_blank">Dominating Shadow DOM</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/fMou5Sy9xdI?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="fMou5Sy9xdI" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/fMou5Sy9xdI/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/fMou5Sy9xdI/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="dominating-shadow-dom.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Dominating+Shadow+DOM'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/dominating-shadow-dom+@girlie_mac"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Tomomi Imura<br>
+                            Recorded: Monday 3:00 PM to 3:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                target="_blank">HackStack.js: AngularJS Applications Broken APIs Delivered Late</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/PNpOGwOoSiw?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="PNpOGwOoSiw" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/PNpOGwOoSiw/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/PNpOGwOoSiw/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'HackStack.js:+AngularJS+Applications+Broken+APIs+Delivered+Late'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/hackstackjs-angularjs-applications-broken-apis-delivered-late+@qaramazov"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Yuri Takheyev<br>
+                            Recorded: Monday 3:30 PM to 3:55 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="get-mean-mongodb-express-angular-node.html" target="_blank">Get
+                                MEAN! MongoDb + express + angular + node</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/ilk7mXschyM?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="ilk7mXschyM" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/ilk7mXschyM/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/ilk7mXschyM/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="get-mean-mongodb-express-angular-node.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Get+MEAN!+MongoDb+++express+++angular+++node'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/get-mean-mongodb-express-angular-node+@wardbell"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Ward Bell<br>
+                            Recorded: Monday 4:00 PM to 4:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="upgrading-the-web.html"
+                                target="_blank">Upgrading the Web</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/6UTWAEJlhww?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="6UTWAEJlhww" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/6UTWAEJlhww/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/6UTWAEJlhww/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="upgrading-the-web.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Upgrading+the+Web'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/upgrading-the-web"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Douglas Crockford<br>
+                            Recorded: Monday 4:40 PM to 5:40 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="typescript-and-angular-20.html"
+                                target="_blank">TypeScript and Angular 2.0</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/2ZIE9gokAxY?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="2ZIE9gokAxY" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/2ZIE9gokAxY/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/2ZIE9gokAxY/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="typescript-and-angular-20.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'TypeScript+and+Angular+2.0'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/typescript-and-angular-20+@jntrnr"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Jonathan Turner<br>
+                            Recorded: Tuesday 9:00 AM to 10:15 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="angular-2-server-rendering.html"
+                                target="_blank">Angular 2 Server Rendering</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/0wvZ7gakqV4?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="0wvZ7gakqV4" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/0wvZ7gakqV4/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/0wvZ7gakqV4/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="angular-2-server-rendering.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Angular+2+Server+Rendering'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-2-server-rendering+@jeffwhelpley+@gdi2290"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Jeff Whelpley, Patrick Stapleton<br>
+                            Recorded: Tuesday 10:30 AM to 10:55 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="angular-2-forms.html"
+                                target="_blank">Angular 2 Forms </a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/MbF9TvnzCBQ?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="MbF9TvnzCBQ" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/MbF9TvnzCBQ/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/MbF9TvnzCBQ/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="angular-2-forms.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Angular+2+Forms+'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-2-forms+@DeborahKurata"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Deborah Kurata<br>
+                            Recorded: Tuesday 10:30 AM to 10:55 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="crazy-fast-prototyping-with-angularjs.html" target="_blank">Crazy
+                                Fast Prototyping with AngularJS</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/Pxgw6uPNX5Q?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="Pxgw6uPNX5Q" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/Pxgw6uPNX5Q/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/Pxgw6uPNX5Q/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="crazy-fast-prototyping-with-angularjs.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Crazy+Fast+Prototyping+with+AngularJS'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/crazy-fast-prototyping-with-angularjs+@simpulton"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Lukas Ruebbelke<br>
+                            Recorded: Tuesday 11:00 AM to 11:55 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="building-office-365-spas-with-angular-and-cors.html"
+                                target="_blank">Building Office 365 SPAs with Angular and CORS</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/v2UAP1qfR9Y?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="v2UAP1qfR9Y" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/v2UAP1qfR9Y/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/v2UAP1qfR9Y/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="building-office-365-spas-with-angular-and-cors.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Building+Office+365+SPAs+with+Angular+and+CORS'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/building-office-365-spas-with-angular-and-cors+@andrewconnell"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Andrew Connell<br>
+                            Recorded: Tuesday 11:00 AM to 11:55 AM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="build-awesome-apps-with-firebase-angular.html" target="_blank">Build
+                                Awesome Apps with Firebase &amp; Angular</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/0Z1QYfRox-g?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="0Z1QYfRox-g" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/0Z1QYfRox-g/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/0Z1QYfRox-g/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="build-awesome-apps-with-firebase-angular.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Build+Awesome+Apps+with+Firebase+&amp;+Angular'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/build-awesome-apps-with-firebase-angular+@SRobTweets"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Sara Robinson<br>
+                            Recorded: Tuesday 1:00 PM to 1:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="directives-in-angular-1-2-win.html"
+                                target="_blank">Directives in Angular: 1 + 2 = WIN</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/svqvYOEkklA?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="svqvYOEkklA" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/svqvYOEkklA/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/svqvYOEkklA/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="directives-in-angular-1-2-win.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Directives+in+Angular:+1+++2+=+WIN'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/directives-in-angular-1-2-win+@josepheames"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Joe Eames<br>
+                            Recorded: Tuesday 1:00 PM to 1:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="componentize-your-app-with-polymer-elements.html"
+                                target="_blank">Componentize your app with Polymer Elements</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/7WgEuNZCCHk?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="7WgEuNZCCHk" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/7WgEuNZCCHk/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/7WgEuNZCCHk/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="componentize-your-app-with-polymer-elements.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Componentize+your+app+with+Polymer+Elements'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/componentize-your-app-with-polymer-elements+@rob_dodson"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Rob Dodson<br>
+                            Recorded: Tuesday 1:30 PM to 2:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html"
+                                target="_blank">Nifty SHAs of Code (or how get your stuff into Angular)</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/-a3mrE-D0bY?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="-a3mrE-D0bY" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/-a3mrE-D0bY/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/-a3mrE-D0bY/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Nifty+SHAs+of+Code+(or+how+get+your+stuff+into+Angular)'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/nifty-shas-of-code-or-how-get-your-stuff-into-angular+@petebd"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Peter Bacon Darwin<br>
+                            Recorded: Tuesday 1:30 PM to 2:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="reusable-angular-components-with-browserify.html"
+                                target="_blank">Reusable Angular Components with Browserify</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/EvPSp08hrTI?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="EvPSp08hrTI" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/EvPSp08hrTI/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/EvPSp08hrTI/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="reusable-angular-components-with-browserify.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Reusable+Angular+Components+with+Browserify'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/reusable-angular-components-with-browserify+@bendrucker"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Ben Drucker<br>
+                            Recorded: Tuesday 3:00 PM to 3:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="angular-cordova-monaca-killer-mobile-app-development.html"
+                                target="_blank">Angular + Cordova + Monaca = Killer mobile app development</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/nBqwteu3ZLs?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="nBqwteu3ZLs" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/nBqwteu3ZLs/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/nBqwteu3ZLs/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="angular-cordova-monaca-killer-mobile-app-development.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Angular+++Cordova+++Monaca+=+Killer+mobile+app+development'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-cordova-monaca-killer-mobile-app-development+@aargelius"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Andreas Argelius<br>
+                            Recorded: Tuesday 3:00 PM to 3:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="a-token-walks-into-a-spa.html"
+                                target="_blank">A Token Walks into a SPA…</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/-usz7XqZikM?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="-usz7XqZikM" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/-usz7XqZikM/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/-usz7XqZikM/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="a-token-walks-into-a-spa.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'A+Token+Walks+into+a+SPA…'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/a-token-walks-into-a-spa+@mgonto"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Martin Gontovnikas<br>
+                            Recorded: Tuesday 3:30 PM to 4:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="making-money-with-phonegap-and-angular-apps.html"
+                                target="_blank">Making money with Phonegap and Angular apps</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/B7FTgLcUDK0?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="B7FTgLcUDK0" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/B7FTgLcUDK0/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/B7FTgLcUDK0/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="making-money-with-phonegap-and-angular-apps.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Making+money+with+Phonegap+and+Angular+apps'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/making-money-with-phonegap-and-angular-apps+@demianborba"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Demian Borba<br>
+                            Recorded: Tuesday 3:30 PM to 4:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding"
+                                href="the-mean-stack-and-the-rise-of-the-machines.html"
+                                target="_blank">The M.E.A.N stack and the rise of the machines</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/epscEWvftS0?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="epscEWvftS0" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/epscEWvftS0/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/epscEWvftS0/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="the-mean-stack-and-the-rise-of-the-machines.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'The+M.E.A.N+stack+and+the+rise+of+the+machines'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/the-mean-stack-and-the-rise-of-the-machines+@softwaregnome"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Travis Tidwell<br>
+                            Recorded: Tuesday 3:30 PM to 4:25 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                    <div class="persona persona--video ng-scope"
+                        ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
+                        <h3><a class="type--color ng-binding" href="designperformance.html"
+                                target="_blank">Design+Performance</a></h3>
+
+                        <div class="persona--img">
+
+                            <!-- Vimeo Videos -->
+                            <iframe ng-hide="video.videoSourceYouTube"
+                                src="https://www.youtube.com/embed/UOB1FaZf2XQ?vq=large&amp;amp;cc_load_policy=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autohide=2&amp;amp;controls=1&amp;amp;fs=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;listType=user_uploads&amp;amp;list=&amp;amp;color=white"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="ng-hide">
+                            </iframe>
+
+
+                            <!--     real youtube below -->
+                            <!--<iframe ng-show="video.videoSourceYouTube" width="289" height="163" src="{{video.iFrameVideoSrc}}" frameborder="0" allowfullscreen></iframe>-->
+                            <!--<img src="http://img.youtube.com/vi/fsrJWUVoXeM/sddefault.jpg" />-->
+
+                            <!--<iframe ng-show="video.videoSourceYouTube" src="{{video.iFrameVideoSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""-->
+                            <!--fs= >-->
+                            <!--</iframe>-->
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="UOB1FaZf2XQ" height="360"
+                                width="480" class="ng-isolate-scope">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/UOB1FaZf2XQ/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/UOB1FaZf2XQ/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="designperformance.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+
+
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Design+Performance'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/designperformance+@Souders"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+                        <p class="ng-binding">Steve Souders<br>
+                            Recorded: Tuesday 4:40 PM to 5:40 PM June, 2015 in San Francisco</p>
+                        <span ng-show="video.sponsoredByCurrent" class="label label-danger label-alt ng-hide">Sponsored
+                            by <a ng-href="" target="_blank" class="type--color ng-binding"></a></span>
+                    </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
+                </div>
+
+
+                <br>
+                <h1 class="type--lead">PreConference Recordings</h1>
+                <div class="persona--container">
+                    <!-- PreConference Videos -->
+                    <!-- ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u.html"
+                                target="_blank">Dan Wahlin Giving Us an Idea of What to Expect at Angular U</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126281528"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="x" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/x/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/x/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Dan+Wahlin+Giving+Us+an+Idea+of+What+to+Expect+at+Angular+U'+at+@AngularU+https://AngularU.com/Video/2015sf/dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u+@danwahlin"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Dan Wahlin runs through the type of things attendees can expect to see and
+                            learn at Angular U in June 2015</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="travis-tidwell-talking-about-mean-and-iot.html" target="_blank">Travis
+                                Tidwell Talking About MEAN and IOT</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126281526"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="x" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/x/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/x/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="travis-tidwell-talking-about-mean-and-iot.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Travis++Tidwell+Talking+About+MEAN+and+IOT'+at+@AngularU+https://AngularU.com/Video/2015sf/travis-tidwell-talking-about-mean-and-iot+@softwaregnome"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Travis Tidwell reviews his upcoming talk at Angular U on API First, MEAN
+                            and how it relates to the Internet of Things (IOT)</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding" href="brad-green-talks-about-angular-u.html"
+                                target="_blank">Brad Green Talks About Angular U</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126281527"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="x" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/x/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/x/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand" href="brad-green-talks-about-angular-u.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Brad+Green+Talks+About+Angular+U'+at+@AngularU+https://AngularU.com/Video/2015sf/brad-green-talks-about-angular-u+@bradlygreen"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Brad Green, Who Runs the Google Angular Team, Talks about His Upcoming
+                            Angular U Keynote</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="ward-bell-talking-mean-session-preview.html" target="_blank">Ward Bell
+                                Talking MEAN session preview</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126145386"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="x" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi/x/sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi/x/sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="ward-bell-talking-mean-session-preview.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Ward+Bell+Talking+MEAN+session+preview'+at+@AngularU+https://AngularU.com/Video/2015sf/ward-bell-talking-mean-session-preview+@wardbell"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Ward Bell talks about what are the basics of the MEAN stack.</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="scott-moss-talks-about-his-ecmascript6-workshops.html"
+                                target="_blank">Scott Moss Talks About His ECMAScript6 Workshops</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126972966"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi//sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi//sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="scott-moss-talks-about-his-ecmascript6-workshops.html" target="_blank"><i
+                                    class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Scott+Moss+Talks+About+His+ECMAScript6+Workshops'+at+@AngularU+https://AngularU.com/Video/2015sf/scott-moss-talks-about-his-ecmascript6-workshops+@scotups"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">ECMAScript6 is what Angular 2 is built on. Scott Moss is doing a full
+                            workshop on EcmaScript both Wendesday and Thursday of Angular U.</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="misko-hevery-talks-about-databinding-in-angular-2.html"
+                                target="_blank">Misko Hevery Talks About Databinding in Angular 2</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/126991619"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi//sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi//sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="misko-hevery-talks-about-databinding-in-angular-2.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Misko+Hevery+Talks+About+Databinding+in+Angular+2'+at+@AngularU+https://AngularU.com/Video/2015sf/misko-hevery-talks-about-databinding-in-angular-2+@mhevery"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Databinding is a significant improvement in Angular 2 over what is in
+                            Angular 1.x. Learn from Misko, the father of Angular what the changes are and why they are
+                            so important.</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                    <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
+                        <h3><a class="type--color ng-binding"
+                                href="brad-green-talks-directives-controllers-become-components-in-angular-2.html"
+                                target="_blank">Brad Green Talks Directives, Controllers become Components in Angular
+                                2</a></h3>
+                        <div class="persona--img">
+
+                            <!--<iframe src="{{video.vimeoIframeSrc}}" style="margin-top: 5px;margin-bottom: 5px;" width="290"-->
+                            <!--height="190" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">-->
+                            <!--</iframe>-->
+
+                            <iframe ng-hide="video.videoSourceYouTube" src="https://player.vimeo.com/video/128435293"
+                                style="margin-top: 5px;margin-bottom: 5px;" width="290" height="190" frameborder="0"
+                                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                            </iframe>
+
+                            <non-sucky-youtube-embed ng-show="video.videoSourceYouTube" vidid="" height="360"
+                                width="480" class="ng-isolate-scope ng-hide">
+                                <div style="position: relative;"><img
+                                        ng-src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"
+                                        style="position: absolute; left: 50%; top: 50%; width: 48px; height: 48px; margin-left: -24px; margin-top: -24px; cursor: pointer;"
+                                        alt="Play"
+                                        src="https://angularu.com/Content/ng/angu/images/youtube-go-red.png"><img
+                                        ng-src="https://img.youtube.com/vi//sddefault.jpg"
+                                        style="width: 100%; height: auto; display: inline; cursor: pointer" alt=""
+                                        src="https://img.youtube.com/vi//sddefault.jpg"></div>
+                            </non-sucky-youtube-embed>
+                        </div>
+
+                        <div class="persona--actions">
+                            <a class="persona--actions--expand"
+                                href="brad-green-talks-directives-controllers-become-components-in-angular-2.html"
+                                target="_blank"><i class="icon-chain"></i>EXPAND</a>
+                            <h4 class="persona--actions--text">Share on: </h4>
+                            <a href="http://twitter.com/home?status=Check+Out+'Brad+Green+Talks+Directives,+Controllers+become+Components+in+Angular+2'+at+@AngularU+https://AngularU.com/Video/2015sf/brad-green-talks-directives-controllers-become-components-in-angular-2+@bradlygreen"
+                                target="_blank" class="icon-twitter"></a><br>
+                        </div>
+
+                        <p class="ng-binding">Brad Green, who runs the Google Angular team talks about (among other
+                            things) how Angular 2 improves on directives and controllers with components.</p>
+                    </div><!-- end ngRepeat: video in list.videosPreConferences -->
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- uiView: footer -->
+        <div ui-view="footer" class="ng-scope">
+            <div id="sponsors" class="nav--section container ng-scope">
+                <div class="separator">
+                    <span class="separator--icon icon-heart"></span>
+                </div>
+
+
+                <h2 class="type--lead">Premiere Sponsor</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--premiere">
+                        <a href="http://rangle.io/" target="_blank"><img class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/rangleio-logo-rgb.jpg"
+                                alt="Rangle.io"
+                                src="https://angularu.com/content/ng/angu/images/rangleio-logo-rgb.jpg"></a>
+                    </li>
+                    <!--<li class="sponsor sponsor&#45;&#45;premiere">-->
+                    <!--<a ng-href="http://go.rangle.io/women?utm_campaign=Women%27s%20Initiative%20AngularU%20Contest&utm_medium=web&utm_source=AngularU%20Website%20News" target="_blank"><img class="sponsor&#45;&#45;img"-->
+                    <!--ng-src="https://angularu.com/miscpages/AU-contest-au-ad.jpg"-->
+                    <!--alt="Rangle.io Woman who code contest"></a>-->
+                    <!--</li>-->
+                </ul>
+
+
+
+                <h2 class="type--lead">Gold Sponsors</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="http://form.io/" target="_blank" href="http://form.io/"><img class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/formio-logo-full.png" alt="formio"
+                                src="https://angularu.com/content/ng/angu/images/formio-logo-full.png"></a>
+                    </li>
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="http://orcsweb.com/" target="_blank" href="http://orcsweb.com/"><img
+                                class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/orcsweb.png"
+                                alt="Orcsweb" src="https://angularu.com/content/ng/angu/images/orcsweb.png"></a>
+                    </li>
+
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="https://microsoft.com" target="_blank" href="https://microsoft.com"><img
+                                class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/mslogo.png"
+                                alt="Microsoft" src="https://angularu.com/content/ng/angu/images/mslogo.png"></a>
+                    </li>
+
+                </ul>
+
+                <h2 class="type--lead">Silver Sponsors</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="http://pluralsight.com/" target="_blank" href="http://pluralsight.com/"><img
+                                class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png"
+                                alt="Puralsight"
+                                src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png"></a>
+                    </li>
+
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="https://developers.braintreepayments.com" target="_blank"
+                            href="https://developers.braintreepayments.com"><img class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png"
+                                alt="Braintree PayPal"
+                                src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png"></a>
+                    </li>
+
+
+
+
+                </ul>
+
+
+
+                <h2 class="type--lead">Media Partners</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="https://www.airpair.com/angularjs " target="_blank"
+                            href="https://www.airpair.com/angularjs"><img class="sponsor--img"
+                                ng-src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250"
+                                alt="AirPair"
+                                src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250"></a>
+                    </li>
+                </ul>
+
+                <!--<ul class="sponsor&#45;&#45;list">-->
+                <!--<li class="sponsor sponsor&#45;&#45;gold">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--<li class="sponsor sponsor&#45;&#45;gold">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+                <!--<ul class="sponsor&#45;&#45;list">-->
+                <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--<li class="sponsor sponsor&#45;&#45;silver">-->
+                <!--<a ng-href="#"><img class="sponsor&#45;&#45;img" src="http://placekitten.com/g/300" alt=""></a>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+                <div class="text-center">
+                    <a ng-href="mailto:sponsor@angularu.com" class="btn btn-primary btn-lg"
+                        href="mailto:sponsor@angularu.com">Become a sponsor</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <footer class="footer ng-scope">
+                <div class="footer--top">
+
+                    <div class="container">
+                        <div class="row">
+                            <!--<div class="col-md-7">-->
+                            <!--<div class="ping-tickets">-->
+                            <!--<label for="pingMeEmail2">Ping me when tickets go on sale:</label>-->
+                            <!--<div class="input-group">-->
+                            <!--<input type="text" class="form-control" id="pingMeEmail2" class="input-" ng-model="pingMeEmailAddress" name="pingMeEmail" placeholder="My Email">-->
+                            <!--<span class="input-group-btn">-->
+                            <!--<button ng-click="$scope.anguPingMe" class="btn btn-primary" type="button">OK</button>-->
+                            <!--</span>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <div class="col-md-12 footer--contact">
+                                <a href="privacy.html">Privacy</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <a ng-href="#"
+                                    href="#">Code of Conduct</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <a ng-href="mailto:service2015@angularu.com"
+                                    href="mailto:service2015@angularu.com">Contact us</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <div class="social alt">
+                                    <h4>Follow us on:</h4>
+                                    <ul>
+                                        <li><a ng-href="http://twitter.com/angularu" target="_blank"
+                                                class="icon-twitter" href="http://twitter.com/angularu"></a></li>
+                                        <li><a ng-href="https://www.facebook.com/angularu" target="_blank"
+                                                class="icon-facebook" href="https://www.facebook.com/angularu"></a></li>
+                                        <li><a ng-href="https://plus.google.com/u/0/communities/100721362580915494668"
+                                                target="_blank" class="icon-google-plus"
+                                                href="https://plus.google.com/u/0/communities/100721362580915494668"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.home-container {
+    .home {
+        &__banner {
+            position: relative;
+            color: #fff;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../images/hero-golden-gate-3.jpg);
+            min-height: 180px;
+            margin-bottom: 75px;
+            span {
+                margin: 0;
+                font-weight: bold;
+                font-size: 36px;
+                text-transform: uppercase;
+                text-align: center;
+                text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+            }
+        }
+        .speaker-details {
+            .centered-icons {
+                position: relative;
+                text-align: center;
+                &.heart-icons {
+                    margin-top: 60px;
+                }
+                i {
+                    background: #fff;
+                    width: 60px;
+                    height: 60px;
+                    padding-top: 15px;
+                    border-radius: 64px;
+                    border: 1px solid #ccc;
+                    position: relative;
+                    top: -18px;
+                    color: #868282;
+                    font-size: 29px;
+                }
+                &::before {
+                    border-bottom: 1px solid #ccc;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 11px;
+                }
+            }
+            h2 {
+                margin-bottom: 20px;
+                line-height: 1.333;
+                text-align: center;
+                font-style: italic;
+                font-weight: lighter;
+                margin: 20px 0 30px 0;
+            }
+            h3 {
+                font-weight: normal;
+                color: #dd1b16;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 19px;
+            }
+            h4 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                strong {
+                    font-weight: 100;
+                    font-style: italic;
+                    font-size: 19px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .premiere-section,
+            .gold-sponsor-section,
+            .silver-sponsor-section,
+            .media-partners-section {
+                text-align: center;
+                ul {
+                    text-align: center;
+                    list-style-type: none;
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 336px;
+                        height: 194px;
+                        img {
+                            vertical-align: middle;
+                            border-style: none;
+                            object-fit: contain;
+                            object-position: center;
+                            height: 100%;
+                            max-width: 100%;
+                            margin: 0 5px;
+                            padding: 5px;
+                            border: 2px solid #f2f2f2;
+                        }
+                    }
+                }
+            }
+            .gold-sponsor-section {
+                ul {
+                    li {
+                        width: 224px;
+                        height: 144px;
+                    }
+                }
+            }
+            .silver-sponsor-section {
+                ul {
+                    li {
+                        width: 141px;
+                        height: 90px;
+                    }
+                }
+            }
+            .media-partners-section {
+                ul {
+                    li {
+                        width: 141px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.speaker-container {
+    h3 {
+        border-bottom: 1px solid transparent !important;
+        margin: 0;
+        padding-bottom: 5px !important;
+    }
+    div.paragraph {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        p {
+            display: inline-block;
+            width: calc(100% - 109px);
+            vertical-align: middle;
+        }
+        .social-icons {
+            display: inline-block;
+            width: 100px;
+        }
+    }
+    h4 {
+        font-weight: normal;
+        color: #23527c;
+        margin-top: 7px;
+        margin-bottom: 17px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}

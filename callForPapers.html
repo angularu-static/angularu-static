@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+
+    <!-- uiView:  -->
+    <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+                <main-nav>
+                    <nav class="nav">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <page-nav>
+                                        <ul class="nav--list">
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="home.html">
+                                                        <ng-transclude>
+                                                            <span class="icon-home"></span><span
+                                                                class="sr-only ">Home</span>
+                                                        </ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <!-- ngIf: pages.show('speakers') -->
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="speaker.html">
+                                                        <ng-transclude><span class="active">
+                                                                Speakers
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                            <!-- ngIf: pages.show('sessions') -->
+                                            <state-nav-item class=" ng-isolate-scope">
+                                                <li>
+                                                    <a href="session.html">
+                                                        <ng-transclude><span class="">
+                                                                Sessions
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <state-nav-item state="overview">
+                                                <li>
+                                                    <a href="agenda.html">
+                                                        <ng-transclude><span class="">
+                                                                Agenda
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('overview') -->
+    
+                                            <li class="more-list">
+                                                <a href="#" class="nav--more">More</a>
+                                                <div class="nav--drop">
+                                                    <ul class="nav--drop--list">
+                                                    <li><a href="videos.html">Videos</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    </ul>
+                                                    <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </page-nav>
+                                </div>
+                                <div class="col-md-7">
+                                    <ticket-signup>
+                                        <div class="ping-tickets">
+    
+    
+                                            <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                            <!-- ngIf: ticket.hotelBookingUrl -->
+                                        </div>
+                                    </ticket-signup>
+                                    <user-nav class="ng-isolate-scope">
+                                        <div class="nav--user">
+                                            <button class="nav--user--toggle icon-user"></button>
+                                            <a class="nav--user--name" href="#">login</a>
+                                            <ul class="nav--list nav--user--list open" style="display:none">
+                                                <li>
+                                                    <a href="login.html">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                </li>
+                                                <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </user-nav>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </main-nav>
+                <div class="body-bag ">
+                    <section class="hero">
+                        <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                        <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                    </section>
+                </div>
+            </div>
+        <!-- uiView:  -->
+        <div>
+            <div id="home" class="container nav--section">
+
+                <div class="row row-centered">
+                    <div class="col-md-9 col-centered">
+                        <h2 class="type--lead">
+                            <span class="type--color">Call for Speakers</span><br>
+                            Submissions Close March 31, 2015
+                        </h2>
+                    </div>
+                </div>
+
+
+
+                <div class="separator">
+                    <span class="separator--icon icon-code"></span>
+                </div>
+                <div class=" row">
+                    <div class="col-md-9 col-centered">
+                        <div>
+                            <p>
+                                We’d like to extend an invitation to you to submit session abstracts for the Angular U
+                                conference that will be located at the Hyatt Regency in San Francisco from June 22 - 23,
+                                2015. Workshops will run on June 24 - 25.
+                                We’re excited to have Google’s AngularJS team giving the opening keynote and have a lot
+                                of great events planned!
+                                The Angular U event focuses on igniting conversations around Angular, ES6, TypeScript,
+                                and Web Components so
+                                we’re looking for talks on those technologies and any others that are related. Talks
+                                will range from 20 to 45 minutes.
+
+                            </p>
+
+                            <b>What specific Angular U topics are we looking for?</b>
+
+                            <ul class="list--default" style="margin-left: 10px;">
+                                <li>Any AngularJS topics (directives, data binding, factories/services, controllers, and
+                                    more)</li>
+                                <li>Web Component frameworks (Polymer, X-Tag, etc.)</li>
+                                <li>The TypeScript language</li>
+                                <li>Integrating ES6 or TypeScript with Angular</li>
+                                <li>ES6 features</li>
+                                <li>Testing Concepts</li>
+                                <li>Structuring and Organizing Angular, ES6, or TypeScript Code</li>
+                                <li>Development tools (Bower, Grunt, Gulp, etc.) related to Angular, ES6, TypeScript,
+                                    and Web Components</li>
+                                <li>Anything else you can think of that’s related to Angular, ES6, TypeScript, and Web
+                                    Components!</li>
+                            </ul>
+                        </div>
+                        <div class="content--section">
+                            Please submit multiple abstracts as this will improve your chances. Feel free to suggest an
+                            all-day conference workshop as well. Workshops will run June 24 - 25, 2015 at the same
+                            location.
+
+                            <br>
+                            <br>
+                            <b>What’s in it for you as a speaker?</b>
+                            <ul class=" list--default" style="margin-left: 10px;">
+                                <li>The adoration of attendees</li>
+                                <li>Free admission to the conference</li>
+                                <li>Sponsorship or workshop profit sharing may be available</li>
+                            </ul>
+
+                            <br>
+                            * <i>If you need expense reimbursement in order to come, please add that information into
+                                the submission form so we know not to approve your session unless we also agree to pay
+                                expenses.
+                            </i>
+                            <br>
+                            <br>
+                            <a href="http://bit.ly/angularu-speak" target="_blank" class="btn btn-primary">Submit
+                                Sessions</a>
+                            <br>
+                            <br>
+                        </div>
+                        <!--<button class="btn btn-primary btn-lg center-block">Read More</button>-->
+                        <div class="content--section">
+                            <div class="social center-block ">
+                                <h4>Follow us on: </h4>
+                                <ul>
+                                    <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a>
+                                    </li>
+                                    <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank"
+                                            class="icon-google-plus"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

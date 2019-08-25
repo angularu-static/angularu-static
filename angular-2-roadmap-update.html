@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+    <!-- uiView:  -->
+    <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+            <main-nav>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <page-nav>
+                                    <ul class="nav--list">
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="home.html">
+                                                    <ng-transclude>
+                                                        <span class="icon-home"></span><span
+                                                            class="sr-only ">Home</span>
+                                                    </ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <!-- ngIf: pages.show('speakers') -->
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="speaker.html">
+                                                    <ng-transclude><span class="active">
+                                                            Speakers
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                        <!-- ngIf: pages.show('sessions') -->
+                                        <state-nav-item class=" ng-isolate-scope">
+                                            <li>
+                                                <a href="session.html">
+                                                    <ng-transclude><span class="">
+                                                            Sessions
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <state-nav-item state="overview">
+                                            <li>
+                                                <a href="agenda.html">
+                                                    <ng-transclude><span class="">
+                                                            Agenda
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('overview') -->
+
+                                        <li class="more-list">
+                                            <a href="#" class="nav--more">More</a>
+                                            <div class="nav--drop">
+                                                <ul class="nav--drop--list">
+                                                <li><a href="videos.html">Videos</a></li>
+                                                <li><a href="news.html">News</a></li>
+                                                <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                </ul>
+                                                <div class="social alt">
+                                                <h4>Follow us on: </h4>
+                                                <ul>
+                                                    <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a></li>
+                                                    <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a></li>
+                                                    <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank" class="icon-google-plus"></a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </page-nav>
+                            </div>
+                            <div class="col-md-7">
+                                <ticket-signup>
+                                    <div class="ping-tickets">
+
+
+                                        <!-- <a class="btn btn-primary ng-hide">
+                                            Buy Ticket
+                                        </a> -->
+                                        <!-- ngIf: ticket.hotelBookingUrl -->
+                                    </div>
+                                </ticket-signup>
+                                <user-nav class="ng-isolate-scope">
+                                    <div class="nav--user">
+                                        <button class="nav--user--toggle icon-user"></button>
+                                        <a class="nav--user--name" href="#">login</a>
+                                        <ul class="nav--list nav--user--list open" style="display:none">
+                                            <li>
+                                                <a href="login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="forgotPassword.html">Forgot Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="callForPapers.html">Call For Speakers</a>
+                                            </li>
+                                            <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                <a href="/Account/Logout">Logout</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </user-nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </main-nav>
+            <div class="body-bag ">
+                <section class="hero">
+                    <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                    <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                </section>
+            </div>
+        </div>
+        <!-- uiView:  -->
+
+
+
+
+        <div>
+
+
+
+
+            <div id="home" class="container">
+
+                <div class="row row-centered">
+                    <div class="col-md-9 col-centered">
+                        <h2 class="type--lead">
+                            <span class="type--color"><a href="videos.html">Back To All Videos</a></span>
+                        </h2>
+
+                        <h3 class="text-center"><span class="type--color" style="color: #00487F;">
+                                <br>
+                                <a class="btn btn-primary btn-lg xcenter-block" href="liveFeedNotify.html">Signup to be
+                                    Notified of Future Events</a>
+
+                            </span></h3>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="content--section">
+
+                    <div class="social" style="margin-bottom: 5px;">
+
+                        <h4>Share This On</h4>
+                        <ul>
+                            <li><a href="http://twitter.com/home?status=Check+Out+'Angular+2+Roadmap+Update'+at+@AngularU+https://AngularU.com/ng/Session/2015sf/angular-2-roadmap-update+@igorminar+@bradlygreen+@mhevery"
+                                    target="_blank" class="icon-twitter"></a></li>
+                        </ul>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <h3 class="type--lead type--color"><a href="angular-2-roadmap-update.html">Angular
+                                2 Roadmap Update</a></h3>
+                    </div>
+
+
+
+                    <style>
+                        .embed-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+
+                        .embed-container iframe,
+                        .embed-container object,
+                        .embed-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    </style>
+                    <div class="embed-container">
+
+
+
+                        <iframe src="https://www.youtube.com/embed/aHGmj_fqPLE" frameborder="0" webkitallowfullscreen=""
+                            mozallowfullscreen="" allowfullscreen=""></iframe>
+
+
+
+                    </div>
+                    <br>
+                    <h2 class="type--lead">The Angular team at Google (lead by Brad, Igor and Misko) have been hard at
+                        work bring out the new version of AngularJS known as Angular 2. In this session these team
+                        leaders bring us up to date on the latest changes and future plans. It will also include an
+                        extended Q&amp;A period.</h2>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

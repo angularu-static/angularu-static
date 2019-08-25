@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/scss/style.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+    <!-- uiView:  -->
+    <div ui-view="" ui-view-name="entry-view" class="ng-scope">
+        <!-- uiView: header -->
+        <div>
+                <main-nav>
+                    <nav class="nav">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <page-nav>
+                                        <ul class="nav--list">
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="home.html">
+                                                        <ng-transclude>
+                                                            <span class="icon-home"></span><span
+                                                                class="sr-only ">Home</span>
+                                                        </ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <!-- ngIf: pages.show('speakers') -->
+                                            <state-nav-item>
+                                                <li>
+                                                    <a href="speaker.html">
+                                                        <ng-transclude><span class="active">
+                                                                Speakers
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                            <!-- ngIf: pages.show('sessions') -->
+                                            <state-nav-item class=" ng-isolate-scope">
+                                                <li>
+                                                    <a href="session.html">
+                                                        <ng-transclude><span class="">
+                                                                Sessions
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item>
+                                            <state-nav-item state="overview">
+                                                <li>
+                                                    <a href="agenda.html">
+                                                        <ng-transclude><span class="">
+                                                                Agenda
+                                                            </span></ng-transclude>
+                                                    </a>
+                                                </li>
+                                            </state-nav-item><!-- end ngIf: pages.show('overview') -->
+    
+                                            <li class="more-list">
+                                                <a href="#" class="nav--more">More</a>
+                                                <div class="nav--drop">
+                                                    <ul class="nav--drop--list">
+                                                    <li><a href="videos.html">Videos</a></li>
+                                                    <li class="active"><a href="news.html">News</a></li>
+                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    </ul>
+                                                    <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank" class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank" class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/" target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </page-nav>
+                                </div>
+                                <div class="col-md-7">
+                                    <ticket-signup>
+                                        <div class="ping-tickets">
+    
+    
+                                            <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                            <!-- ngIf: ticket.hotelBookingUrl -->
+                                        </div>
+                                    </ticket-signup>
+                                    <user-nav class="ng-isolate-scope">
+                                        <div class="nav--user">
+                                            <button class="nav--user--toggle icon-user"></button>
+                                            <a class="nav--user--name" href="#">login</a>
+                                            <ul class="nav--list nav--user--list open" style="display:none">
+                                                <li>
+                                                    <a href="login.html">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                </li>
+                                                <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </user-nav>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </main-nav>
+                <div class="body-bag ">
+                    <section class="hero">
+                        <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                        <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                    </section>
+                </div>
+            </div>
+        <!-- uiView:  -->
+
+
+
+
+        <div>
+
+
+
+
+            <div class="container">
+
+                <h2 class="type--lead">News</h2>
+            </div>
+            <div class="container">
+
+                <div class="col-md-9 col-centered">
+
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>Date</td>
+                                <td>Title</td>
+                                <td>Author(s)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thursday, August 13, 2015</td>
+                                <td><a href="#"
+                                        class="type--color" target="_blank">Announcing Steve Souders Keynote at Angular
+                                        U</a></td>
+                                <td>Angular U Staff</td>
+
+                            </tr>
+                            <tr>
+                                <td>Monday, June 08, 2015</td>
+                                <td><a href="#"
+                                        class="type--color" target="_blank">Rangle.io's Women Who Code Contest
+                                        Announced</a></td>
+                                <td>Angular U Staff</td>
+
+                            </tr>
+                            <tr>
+                                <td>Wednesday, May 20, 2015</td>
+                                <td><a href="http://peterkellner.net" class="type--color" target="_blank">RANGLE.IO and
+                                        Pluralsight Join Sponsors at Angular U</a></td>
+                                <td>Angular U Staff</td>
+
+                            </tr>
+                            <tr>
+                                <td>Tuesday, April 07, 2015</td>
+                                <td><a href="#"
+                                        class="type--color" target="_blank">Honored To Have Angular U On AngularJS.Org
+                                        Site! </a></td>
+                                <td>Angular U Staff</td>
+
+                            </tr>
+                            <tr>
+                                <td>Sunday, March 29, 2015</td>
+                                <td><a href="http://weblogs.asp.net/dwahlin/introducing-the-angularu-conference"
+                                        class="type--color" target="_blank">Introducing the Angular U Conference</a>
+                                </td>
+                                <td>Dan Wahlin</td>
+
+                            </tr>
+                            <tr>
+                                <td>Thursday, March 26, 2015</td>
+                                <td><a href="#" class="type--color"
+                                        target="_blank">Why Am I So Excited About Angular U?</a></td>
+                                <td>Peter Kellner</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

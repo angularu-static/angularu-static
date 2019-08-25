@@ -1,0 +1,226 @@
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format("woff2");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  outline: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+button i {
+  vertical-align: middle;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dd1b16;
+  border-color: transparent;
+}
+
+.social-icons a {
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 42px;
+  padding: 6px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+}
+.footer .footer-block {
+  padding: 20px 0;
+}
+.footer .footer-block ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.footer .footer-block ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 20px;
+  border-right: 1px solid #ccc;
+}
+.footer .footer-block ul li a {
+  color: #fff;
+}
+
+.home-container .home__banner {
+  position: relative;
+  color: #fff;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/hero-golden-gate-3.jpg);
+  min-height: 180px;
+  margin-bottom: 75px;
+}
+.home-container .home__banner span {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
+.home-container .home .speaker-details .centered-icons {
+  position: relative;
+  text-align: center;
+}
+.home-container .home .speaker-details .centered-icons.heart-icons {
+  margin-top: 60px;
+}
+.home-container .home .speaker-details .centered-icons i {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  padding-top: 15px;
+  border-radius: 64px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: -18px;
+  color: #868282;
+  font-size: 29px;
+}
+.home-container .home .speaker-details .centered-icons::before {
+  border-bottom: 1px solid #ccc;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 11px;
+}
+.home-container .home .speaker-details h2 {
+  margin-bottom: 20px;
+  line-height: 1.333;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 20px 0 30px 0;
+}
+.home-container .home .speaker-details h3 {
+  font-weight: normal;
+  color: #dd1b16;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 19px;
+}
+.home-container .home .speaker-details h4 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.home-container .home .speaker-details h4 strong {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+}
+.home-container .home .speaker-details .premiere-section,
+.home-container .home .speaker-details .gold-sponsor-section,
+.home-container .home .speaker-details .silver-sponsor-section,
+.home-container .home .speaker-details .media-partners-section {
+  text-align: center;
+}
+.home-container .home .speaker-details .premiere-section ul,
+.home-container .home .speaker-details .gold-sponsor-section ul,
+.home-container .home .speaker-details .silver-sponsor-section ul,
+.home-container .home .speaker-details .media-partners-section ul {
+  text-align: center;
+  list-style-type: none;
+}
+.home-container .home .speaker-details .premiere-section ul li,
+.home-container .home .speaker-details .gold-sponsor-section ul li,
+.home-container .home .speaker-details .silver-sponsor-section ul li,
+.home-container .home .speaker-details .media-partners-section ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 336px;
+  height: 194px;
+}
+.home-container .home .speaker-details .premiere-section ul li img,
+.home-container .home .speaker-details .gold-sponsor-section ul li img,
+.home-container .home .speaker-details .silver-sponsor-section ul li img,
+.home-container .home .speaker-details .media-partners-section ul li img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 5px;
+  padding: 5px;
+  border: 2px solid #f2f2f2;
+}
+.home-container .home .speaker-details .gold-sponsor-section ul li {
+  width: 224px;
+  height: 144px;
+}
+.home-container .home .speaker-details .silver-sponsor-section ul li {
+  width: 141px;
+  height: 90px;
+}
+.home-container .home .speaker-details .media-partners-section ul li {
+  width: 141px;
+  height: 90px;
+}
+
+.speaker-container h3 {
+  border-bottom: 1px solid transparent !important;
+  margin: 0;
+  padding-bottom: 5px !important;
+}
+.speaker-container div.paragraph {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.speaker-container div.paragraph p {
+  display: inline-block;
+  width: calc(100% - 109px);
+  vertical-align: middle;
+}
+.speaker-container div.paragraph .social-icons {
+  display: inline-block;
+  width: 100px;
+}
+.speaker-container h4 {
+  font-weight: normal;
+  color: #23527c;
+  margin-top: 7px;
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.icon-google-plus {
+  color: #dd1b16;
+}
