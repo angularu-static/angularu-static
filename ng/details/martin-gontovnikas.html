@@ -35,7 +35,7 @@
                                     <ul class="nav--list">
                                         <state-nav-item>
                                             <li>
-                                                <a href="../home.html">
+                                                <a href="../home">
                                                     <ng-transclude>
                                                         <span class="icon-home"></span><span
                                                             class="sr-only ">Home</span>
@@ -46,7 +46,7 @@
                                         <!-- ngIf: pages.show('speakers') -->
                                         <state-nav-item>
                                             <li>
-                                                <a href="../speaker.html">
+                                                <a href="../speaker">
                                                     <ng-transclude><span class="active">
                                                             Speakers
                                                         </span></ng-transclude>
@@ -56,7 +56,7 @@
                                         <!-- ngIf: pages.show('sessions') -->
                                         <state-nav-item class=" ng-isolate-scope">
                                             <li>
-                                                <a href="../session.html">
+                                                <a href="../session">
                                                     <ng-transclude><span class="">
                                                             Sessions
                                                         </span></ng-transclude>
@@ -65,7 +65,7 @@
                                         </state-nav-item>
                                         <state-nav-item state="overview">
                                             <li>
-                                                <a href="../agenda.html">
+                                                <a href="../agenda">
                                                     <ng-transclude><span class="">
                                                             Agenda
                                                         </span></ng-transclude>
@@ -77,10 +77,10 @@
                                             <a href="#" class="nav--more">More</a>
                                             <div class="nav--drop">
                                                 <ul class="nav--drop--list">
-                                                    <li><a href="../videos.html">Videos</a></li>
-                                                    <li><a href="../news.html">News</a></li>
-                                                    <li><a href="../communityEvent.html">Community Event 6/23</a></li>
-                                                    <li><a href="../pluralsight.html">Pluralsight Courses</a></li>
+                                                    <li><a href="../videos">Videos</a></li>
+                                                    <li><a href="../news">News</a></li>
+                                                    <li><a href="../communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="../pluralsight">Pluralsight Courses</a></li>
                                                 </ul>
                                                 <div class="social alt">
                                                     <h4>Follow us on: </h4>
@@ -115,13 +115,13 @@
                                         <a class="nav--user--name" href="#">login</a>
                                         <ul class="nav--list nav--user--list open" style="display:none">
                                             <li>
-                                                <a href="../login.html">Login</a>
+                                                <a href="../login">Login</a>
                                             </li>
                                             <li>
-                                                <a href="../forgotPassword.html">Forgot Password</a>
+                                                <a href="../forgotPassword">Forgot Password</a>
                                             </li>
                                             <li>
-                                                <a href="../callForPapers.html">Call For Speakers</a>
+                                                <a href="../callForPapers">Call For Speakers</a>
                                             </li>
                                             <!-- <li ng-show="userNav.username" class="ng-hide">
                                                     <a href="/Account/Logout">Logout</a>
@@ -257,7 +257,7 @@
                             <p description="description" for="session" class="ng-isolate-scope"><span ng-bind-html="description.content" class="list--squared ng-binding">Everybody has been creating Single Page Apps lately. They look neat and fast. Handling authentication in an SPA can be tricky though: Cookies, Tokens, keeping the user authenticated and handling rights to access URLs and resources are some of the things we need to take care of. In this talk, we’ll learn how to add authentication to an AngularJS app with a live coding session in which we’ll go from a regular SPA to a fully secured one .</span>
                 </p>
                             <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                              <a href="../a-token-walks-into-a-spa.html" class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the video</a>
+                              <a href="../a-token-walks-into-a-spa" class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the video</a>
                               <span class="btn btn-light">Recording of Live Stream From Conference</span>
                             </div>
                           </li><!-- end ngRepeat: session in details.speaker.sessions -->
@@ -351,7 +351,7 @@
                         <div class="row">
 
                             <div class="col-md-12 footer--contact">
-                                <a href="../privacy.html">Privacy</a>
+                                <a href="../privacy">Privacy</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a ng-href="#" href="#">Code of Conduct</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>

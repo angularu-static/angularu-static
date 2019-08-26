@@ -36,7 +36,7 @@
                                         <ul class="nav--list">
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="home.html">
+                                                    <a href="home">
                                                         <ng-transclude>
                                                             <span class="icon-home"></span><span
                                                                 class="sr-only ">Home</span>
@@ -47,7 +47,7 @@
                                             <!-- ngIf: pages.show('speakers') -->
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="speaker.html">
+                                                    <a href="speaker">
                                                         <ng-transclude><span class="active">
                                                                 Speakers
                                                             </span></ng-transclude>
@@ -57,7 +57,7 @@
                                             <!-- ngIf: pages.show('sessions') -->
                                             <state-nav-item class=" ng-isolate-scope">
                                                 <li class="active">
-                                                    <a href="session.html">
+                                                    <a href="session">
                                                         <ng-transclude><span class="">
                                                                 Sessions
                                                             </span></ng-transclude>
@@ -66,7 +66,7 @@
                                             </state-nav-item>
                                             <state-nav-item state="overview">
                                                 <li>
-                                                    <a href="agenda.html">
+                                                    <a href="agenda">
                                                         <ng-transclude><span class="">
                                                                 Agenda
                                                             </span></ng-transclude>
@@ -78,10 +78,10 @@
                                                 <a href="#" class="nav--more">More</a>
                                                 <div class="nav--drop">
                                                     <ul class="nav--drop--list">
-                                                    <li><a href="videos.html">Videos</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
-                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    <li><a href="videos">Videos</a></li>
+                                                    <li><a href="news">News</a></li>
+                                                    <li><a href="communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight">Pluralsight Courses</a></li>
                                                     </ul>
                                                     <div class="social alt">
                                                     <h4>Follow us on: </h4>
@@ -113,13 +113,13 @@
                                             <a class="nav--user--name" href="#">login</a>
                                             <ul class="nav--list nav--user--list open" style="display:none">
                                                 <li>
-                                                    <a href="login.html">Login</a>
+                                                    <a href="login">Login</a>
                                                 </li>
                                                 <li>
-                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                    <a href="forgotPassword">Forgot Password</a>
                                                 </li>
                                                 <li>
-                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                    <a href="callForPapers">Call For Speakers</a>
                                                 </li>
                                                 <!-- <li ng-show="userNav.username" class="ng-hide">
                                                     <a href="/Account/Logout">Logout</a>
@@ -276,7 +276,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="angular-2-roadmap-update.html">
+                                                href="angular-2-roadmap-update">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Angular 2 Roadmap Update</h4>
                                                 </ng-transclude>
@@ -294,7 +294,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/igor-minar.html">
+                                            href="details/igor-minar">
                                             <h4 class="color ng-binding">Igor Minar</h4>
                                         </a>
                                         <p class="ng-binding">Igor is a software engineer at Google. He is the lead of
@@ -310,7 +310,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/brad-green.html">
+                                            href="details/brad-green">
                                             <h4 class="color ng-binding">Brad Green</h4>
                                         </a>
                                         <p class="ng-binding">Brad is an engineering director at Google where he manages
@@ -326,7 +326,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/misko-hevery.html">
+                                            href="details/misko-hevery">
                                             <h4 class="color ng-binding">Misko Hevery</h4>
                                         </a>
                                         <p class="ng-binding">Miško Hevery is the creator of AngularJS framework. He has
@@ -335,7 +335,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="angular-2-roadmap-update.html"
+                                    <a href="angular-2-roadmap-update"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -365,7 +365,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html">
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Dan and John Bringing Their View On
                                                         The Latest In Angular</h4>
@@ -384,7 +384,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/dan-wahlin.html">
+                                            href="details/dan-wahlin">
                                             <h4 class="color ng-binding">Dan Wahlin</h4>
                                         </a>
                                         <p class="ng-binding">Google Developer Expert, MS Regional Director and MVP,
@@ -399,7 +399,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/john-papa.html">
+                                            href="details/john-papa">
                                             <h4 class="color ng-binding">John Papa</h4>
                                         </a>
                                         <p class="ng-binding">Google Developer Expert, MS Regional Director, Adventures
@@ -408,7 +408,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                    <a href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -438,7 +438,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="angular-2-speed-run.html">
+                                                href="angular-2-speed-run">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Angular 2 Speed Run</h4>
                                                 </ng-transclude>
@@ -456,7 +456,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/john-lindquist.html">
+                                            href="details/john-lindquist">
                                             <h4 class="color ng-binding">John Lindquist</h4>
                                         </a>
                                         <p class="ng-binding">John is the head egg at egghead.io.</p>
@@ -464,7 +464,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="angular-2-speed-run.html"
+                                    <a href="angular-2-speed-run"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -494,7 +494,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html">
+                                                href="ng6-why-you-should-use-es6-with-angular-today">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">ng6 Why You Should Use ES6 with
                                                         Angular Today</h4>
@@ -513,7 +513,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/scott-moss.html">
+                                            href="details/scott-moss">
                                             <h4 class="color ng-binding">Scott Moss</h4>
                                         </a>
                                         <p class="ng-binding">Scott is an instructor and engineer with a passion for UI.
@@ -522,7 +522,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                    <a href="ng6-why-you-should-use-es6-with-angular-today"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -552,7 +552,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="migrating-to-angular2.html">
+                                                href="migrating-to-angular2">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Migrating to Angular2</h4>
                                                 </ng-transclude>
@@ -570,7 +570,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/david-east.html">
+                                            href="details/david-east">
                                             <h4 class="color ng-binding">David East</h4>
                                         </a>
                                         <p class="ng-binding">Developer Programs Engineer at Google. Full-time Firebase,
@@ -579,7 +579,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="migrating-to-angular2.html"
+                                    <a href="migrating-to-angular2"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -609,7 +609,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="dominating-shadow-dom.html">
+                                                href="dominating-shado"html">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Dominating Shadow DOM</h4>
                                                 </ng-transclude>
@@ -627,7 +627,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/tomomi-imura.html">
+                                            href="details/tomomi-imura">
                                             <h4 class="color ng-binding">Tomomi Imura</h4>
                                         </a>
                                         <p class="ng-binding">Tomomi is an avid open web advocate, currently working as
@@ -636,7 +636,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="dominating-shadow-dom.html"
+                                    <a href="dominating-shadow-dom"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -666,7 +666,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html">
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">HackStack.js: AngularJS Applications
                                                         Broken APIs Delivered Late</h4>
@@ -685,7 +685,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/yuri-takheyev.html">
+                                            href="details/yuri-takheyev">
                                             <h4 class="color ng-binding">Yuri Takheyev</h4>
                                         </a>
                                         <p class="ng-binding">Yuri Takhteyev is the CTO of Rangle.io, a JavaScript
@@ -694,7 +694,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                    <a href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -724,7 +724,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="get-mean-mongodb-express-angular-node.html">
+                                                href="get-mean-mongodb-express-angular-node">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Get MEAN! MongoDb + express +
                                                         angular + node</h4>
@@ -743,7 +743,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/ward-bell.html">
+                                            href="details/ward-bell">
                                             <h4 class="color ng-binding">Ward Bell</h4>
                                         </a>
                                         <p class="ng-binding">Ward is president of IdeaBlade consultants &amp; makers of
@@ -752,7 +752,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="get-mean-mongodb-express-angular-node.html"
+                                    <a href="get-mean-mongodb-express-angular-node"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -782,7 +782,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="upgrading-the-web.html">
+                                                href="upgrading-the-web">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Upgrading the Web</h4>
                                                 </ng-transclude>
@@ -800,7 +800,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/douglas-crockford.html">
+                                            href="details/douglas-crockford">
                                             <h4 class="color ng-binding">Douglas Crockford</h4>
                                         </a>
                                         <p class="ng-binding">Douglas Crockford discovered the JSON Data Interchange
@@ -810,7 +810,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="upgrading-the-web.html"
+                                    <a href="upgrading-the-web"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -842,7 +842,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="typescript-and-angular-20.html">
+                                                href="typescript-and-angular-20">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">TypeScript and Angular 2.0</h4>
                                                 </ng-transclude>
@@ -860,7 +860,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/jonathan-turner.html">
+                                            href="details/jonathan-turner">
                                             <h4 class="color ng-binding">Jonathan Turner</h4>
                                         </a>
                                         <p class="ng-binding">Programming language geek working at Microsoft on
@@ -869,7 +869,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="typescript-and-angular-20.html"
+                                    <a href="typescript-and-angular-20"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -899,7 +899,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="angular-2-forms.html">
+                                                href="angular-2-forms">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Angular 2 Forms</h4>
                                                 </ng-transclude>
@@ -917,7 +917,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/deborah-kurata.html">
+                                            href="details/deborah-kurata">
                                             <h4 class="color ng-binding">Deborah Kurata</h4>
                                         </a>
                                         <p class="ng-binding">Deborah Kurata is a developer, speaker, author, Microsoft
@@ -926,7 +926,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="angular-2-forms.html" class="btn btn-primary uppercase"><i
+                                    <a href="angular-2-forms" class="btn btn-primary uppercase"><i
                                             class="icon-camera"></i> Watch the video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
                                 </div>
@@ -953,7 +953,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="angular-2-server-rendering.html">
+                                                href="angular-2-server-rendering">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Angular 2 Server Rendering</h4>
                                                 </ng-transclude>
@@ -971,7 +971,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/jeff-whelpley.html">
+                                            href="details/jeff-whelpley">
                                             <h4 class="color ng-binding">Jeff Whelpley</h4>
                                         </a>
                                         <p class="ng-binding">Chief Architect at GetHuman, Angular Boston meetup
@@ -986,7 +986,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/patrick-stapleton.html">
+                                            href="details/patrick-stapleton">
                                             <h4 class="color ng-binding">Patrick Stapleton</h4>
                                         </a>
                                         <p class="ng-binding">Creator of @AngularClass, Open-Source contributor,
@@ -995,7 +995,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="angular-2-server-rendering.html"
+                                    <a href="angular-2-server-rendering"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1042,7 +1042,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/justin-schwartzenberger.html">
+                                            href="details/justin-schwartzenberger">
                                             <h4 class="color ng-binding">Justin Schwartzenberger</h4>
                                         </a>
                                         <p class="ng-binding">Justin is a Lead Engineer at SoCreate building
@@ -1057,7 +1057,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/justin-couto.html">
+                                            href="details/justin-couto">
                                             <h4 class="color ng-binding">Justin Couto</h4>
                                         </a>
                                         <p class="ng-binding">Justin Couto is the founder and CEO of SoCreate.</p>
@@ -1094,7 +1094,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="building-office-365-spas-with-angular-and-cors.html">
+                                                href="building-office-365-spas-with-angular-and-cors">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Building Office 365 SPAs with
                                                         Angular and CORS</h4>
@@ -1113,7 +1113,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/andrew-connell.html">
+                                            href="details/andrew-connell">
                                             <h4 class="color ng-binding">Andrew Connell</h4>
                                         </a>
                                         <p class="ng-binding">Independent developer, speaker &amp; instructor focused on
@@ -1122,7 +1122,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="building-office-365-spas-with-angular-and-cors.html"
+                                    <a href="building-office-365-spas-with-angular-and-cors"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1150,7 +1150,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="crazy-fast-prototyping-with-angularjs.html">
+                                                href="crazy-fast-prototyping-with-angularjs">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Crazy Fast Prototyping with
                                                         AngularJS</h4>
@@ -1169,7 +1169,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/lukas-ruebbelke.html">
+                                            href="details/lukas-ruebbelke">
                                             <h4 class="color ng-binding">Lukas Ruebbelke</h4>
                                         </a>
                                         <p class="ng-binding">Developer. Hacker. Community backer. Author and blogger.
@@ -1178,7 +1178,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="crazy-fast-prototyping-with-angularjs.html"
+                                    <a href="crazy-fast-prototyping-with-angularjs"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1224,7 +1224,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/joonas-lehtinen.html">
+                                            href="details/joonas-lehtinen">
                                             <h4 class="color ng-binding">Joonas Lehtinen</h4>
                                         </a>
                                         <p class="ng-binding">Dr. Joonas Lehtinen is the founder of Vaadin project, a
@@ -1262,7 +1262,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="directives-in-angular-1-2-win.html">
+                                                href="directives-in-angular-1-2-win">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Directives in Angular: 1 + 2 = WIN
                                                     </h4>
@@ -1281,7 +1281,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/joe-eames.html">
+                                            href="details/joe-eames">
                                             <h4 class="color ng-binding">Joe Eames</h4>
                                         </a>
                                         <p class="ng-binding">Pluralsight author, speaker, and organizer of ng-conf.</p>
@@ -1289,7 +1289,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="directives-in-angular-1-2-win.html"
+                                    <a href="directives-in-angular-1-2-win"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1317,7 +1317,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="build-awesome-apps-with-firebase-angular.html">
+                                                href="build-awesome-apps-with-firebase-angular">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Build Awesome Apps with Firebase
                                                         &amp; Angular</h4>
@@ -1336,7 +1336,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/sara-robinson.html">
+                                            href="details/sara-robinson">
                                             <h4 class="color ng-binding">Sara Robinson</h4>
                                         </a>
                                         <p class="ng-binding">Sara is a Developer Advocate and realtime aficionado on
@@ -1345,7 +1345,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="build-awesome-apps-with-firebase-angular.html"
+                                    <a href="build-awesome-apps-with-firebase-angular"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1391,7 +1391,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/doris-chen.html">
+                                            href="details/doris-chen">
                                             <h4 class="color ng-binding">Doris Chen</h4>
                                         </a>
                                         <p class="ng-binding">Dr. Doris Chen is a Senior Technology Evangelist at
@@ -1429,7 +1429,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html">
+                                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Nifty SHAs of Code (or how get your
                                                         stuff into Angular)</h4>
@@ -1448,7 +1448,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/peter-bacondarwin.html">
+                                            href="details/peter-bacondarwin">
                                             <h4 class="color ng-binding">Peter Bacon Darwin</h4>
                                         </a>
                                         <p class="ng-binding">AngularJS 1.x Development Lead and Dad</p>
@@ -1456,7 +1456,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html"
+                                    <a href="nifty-shas-of-code-or-how-get-your-stuff-into-angular"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1484,7 +1484,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="componentize-your-app-with-polymer-elements.html">
+                                                href="componentize-your-app-with-polymer-elements">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Componentize your app with Polymer
                                                         Elements</h4>
@@ -1503,7 +1503,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/rob-dodson.html">
+                                            href="details/rob-dodson">
                                             <h4 class="color ng-binding">Rob Dodson</h4>
                                         </a>
                                         <p class="ng-binding">Developer Advocate at Google working with the Polymer and
@@ -1512,7 +1512,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="componentize-your-app-with-polymer-elements.html"
+                                    <a href="componentize-your-app-with-polymer-elements"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1559,7 +1559,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/jeanie-chung.html">
+                                            href="details/jeanie-chung">
                                             <h4 class="color ng-binding">Jeanie Chung</h4>
                                         </a>
                                         <p class="ng-binding">Engineer currently working on the Foundation team at ZURB.
@@ -1597,7 +1597,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="angular-cordova-monaca-killer-mobile-app-development.html">
+                                                href="angular-cordova-monaca-killer-mobile-app-development">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Angular + Cordova + Monaca = Killer
                                                         mobile app development</h4>
@@ -1616,7 +1616,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/andreas-argelius.html">
+                                            href="details/andreas-argelius">
                                             <h4 class="color ng-binding">Andreas Argelius</h4>
                                         </a>
                                         <p class="ng-binding">Andreas is a core developer on Onsen UI, an Angular based
@@ -1625,7 +1625,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="angular-cordova-monaca-killer-mobile-app-development.html"
+                                    <a href="angular-cordova-monaca-killer-mobile-app-development"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1653,7 +1653,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="reusable-angular-components-with-browserify.html">
+                                                href="reusable-angular-components-with-browserify">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Reusable Angular Components with
                                                         Browserify</h4>
@@ -1672,7 +1672,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/ben-drucker.html">
+                                            href="details/ben-drucker">
                                             <h4 class="color ng-binding">Ben Drucker</h4>
                                         </a>
                                         <p class="ng-binding">JavaScript developer and open source advocate. Founder of
@@ -1681,7 +1681,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="reusable-angular-components-with-browserify.html"
+                                    <a href="reusable-angular-components-with-browserify"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1728,7 +1728,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/aysegul-yonet.html">
+                                            href="details/aysegul-yonet">
                                             <h4 class="color ng-binding">Aysegul Yonet</h4>
                                         </a>
                                         <p class="ng-binding">Aysegul is a Senior Software Engineer and Google Developer
@@ -1766,7 +1766,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="making-money-with-phonegap-and-angular-apps.html">
+                                                href="making-money-with-phonegap-and-angular-apps">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Making money with Phonegap and
                                                         Angular apps</h4>
@@ -1785,7 +1785,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/demian-borba.html">
+                                            href="details/demian-borba">
                                             <h4 class="color ng-binding">Demian Borba</h4>
                                         </a>
                                         <p class="ng-binding">Developer Advocate at Braintree/PayPal focused on Web and
@@ -1794,7 +1794,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="making-money-with-phonegap-and-angular-apps.html"
+                                    <a href="making-money-with-phonegap-and-angular-apps"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1822,7 +1822,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="a-token-walks-into-a-spa.html">
+                                                href="a-token-walks-into-a-spa">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">A Token Walks into a SPA…</h4>
                                                 </ng-transclude>
@@ -1840,7 +1840,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/martin-gontovnikas.html">
+                                            href="details/martin-gontovnikas">
                                             <h4 class="color ng-binding">Martin Gontovnikas</h4>
                                         </a>
                                         <p class="ng-binding">Developer Advocate at Auth0. JS Lover. Creator of
@@ -1849,7 +1849,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="a-token-walks-into-a-spa.html"
+                                    <a href="a-token-walks-into-a-spa"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1877,7 +1877,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="the-mean-stack-and-the-rise-of-the-machines.html">
+                                                href="the-mean-stack-and-the-rise-of-the-machines">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">The M.E.A.N stack and the rise of
                                                         the machines</h4>
@@ -1896,7 +1896,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/travis-tidwell.html">
+                                            href="details/travis-tidwell">
                                             <h4 class="color ng-binding">Travis Tidwell</h4>
                                         </a>
                                         <p class="ng-binding">An Open Source enthusiast, a M.E.A.N developer, and hacker
@@ -1905,7 +1905,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="the-mean-stack-and-the-rise-of-the-machines.html"
+                                    <a href="the-mean-stack-and-the-rise-of-the-machines"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -1935,7 +1935,7 @@
                                         <!-- ngIf: link.workshop -->
                                         <!-- ngIf: !link.workshop --><span ng-if="!link.workshop" class="ng-scope">
                                             <a ui-sref="session(link.session.$stateParams())"
-                                                href="designperformance.html">
+                                                href="designperformance">
                                                 <ng-transclude>
                                                     <h4 class="ng-binding ng-scope">Design+Performance</h4>
                                                 </ng-transclude>
@@ -1953,7 +1953,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/steve-souders.html">
+                                            href="details/steve-souders">
                                             <h4 class="color ng-binding">Steve Souders</h4>
                                         </a>
                                         <p class="ng-binding">Steve works at SpeedCurve on the interplay between
@@ -1962,7 +1962,7 @@
                                 </div><!-- end ngRepeat: speaker in session.speakersList -->
 
                                 <div class="inline-buttons text-small" ng-hide="session.videoUrl == undefined">
-                                    <a href="designperformance.html"
+                                    <a href="designperformance"
                                         class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the
                                         video</a>
                                     <a href="#" class="btn btn-light">Recording of Live Stream From Conference</a>
@@ -2013,7 +2013,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/kyle-simpson.html">
+                                            href="details/kyle-simpson">
                                             <h4 class="color ng-binding">Kyle Simpson</h4>
                                         </a>
                                         <p class="ng-binding">Kyle Simpson is an Open Web Evangelist who's passionate
@@ -2068,7 +2068,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/terence-carroll.html">
+                                            href="details/terence-carroll">
                                             <h4 class="color ng-binding">Terence Carroll</h4>
                                         </a>
                                         <p class="ng-binding">Software Engineer that strives to build beautiful things.
@@ -2123,7 +2123,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/deborah-kurata.html">
+                                            href="details/deborah-kurata">
                                             <h4 class="color ng-binding">Deborah Kurata</h4>
                                         </a>
                                         <p class="ng-binding">Deborah Kurata is a developer, speaker, author, Microsoft
@@ -2138,7 +2138,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/jerry-kurata.html">
+                                            href="details/jerry-kurata">
                                             <h4 class="color ng-binding">Jerry Kurata</h4>
                                         </a>
                                         <p class="ng-binding">Jerry Kurata is a consultant specializing in full stack
@@ -2193,7 +2193,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/andrew-connell.html">
+                                            href="details/andrew-connell">
                                             <h4 class="color ng-binding">Andrew Connell</h4>
                                         </a>
                                         <p class="ng-binding">Independent developer, speaker &amp; instructor focused on
@@ -2247,7 +2247,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/scott-moss.html">
+                                            href="details/scott-moss">
                                             <h4 class="color ng-binding">Scott Moss</h4>
                                         </a>
                                         <p class="ng-binding">Scott is an instructor and engineer with a passion for UI.
@@ -2305,7 +2305,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/dan-wahlin.html">
+                                            href="details/dan-wahlin">
                                             <h4 class="color ng-binding">Dan Wahlin</h4>
                                         </a>
                                         <p class="ng-binding">Google Developer Expert, MS Regional Director and MVP,
@@ -2362,7 +2362,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/scott-moss.html">
+                                            href="details/scott-moss">
                                             <h4 class="color ng-binding">Scott Moss</h4>
                                         </a>
                                         <p class="ng-binding">Scott is an instructor and engineer with a passion for UI.
@@ -2417,7 +2417,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/kyle-simpson.html">
+                                            href="details/kyle-simpson">
                                             <h4 class="color ng-binding">Kyle Simpson</h4>
                                         </a>
                                         <p class="ng-binding">Kyle Simpson is an Open Web Evangelist who's passionate
@@ -2471,7 +2471,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/paul-pardi.html">
+                                            href="details/paul-pardi">
                                             <h4 class="color ng-binding">Paul Pardi</h4>
                                         </a>
                                         <p class="ng-binding">A Senior Content Publishing Manager focused on developer
@@ -2526,7 +2526,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/ben-drucker.html">
+                                            href="details/ben-drucker">
                                             <h4 class="color ng-binding">Ben Drucker</h4>
                                         </a>
                                         <p class="ng-binding">JavaScript developer and open source advocate. Founder of
@@ -2541,7 +2541,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/david-east.html">
+                                            href="details/david-east">
                                             <h4 class="color ng-binding">David East</h4>
                                         </a>
                                         <p class="ng-binding">Developer Programs Engineer at Google. Full-time Firebase,
@@ -2596,7 +2596,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/lukas-ruebbelke.html">
+                                            href="details/lukas-ruebbelke">
                                             <h4 class="color ng-binding">Lukas Ruebbelke</h4>
                                         </a>
                                         <p class="ng-binding">Developer. Hacker. Community backer. Author and blogger.
@@ -2611,7 +2611,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/martin-gontovnikas.html">
+                                            href="details/martin-gontovnikas">
                                             <h4 class="color ng-binding">Martin Gontovnikas</h4>
                                         </a>
                                         <p class="ng-binding">Developer Advocate at Auth0. JS Lover. Creator of
@@ -2666,7 +2666,7 @@
                                     </div>
                                     <div class="sessions--info--detail">
                                         <a ui-sref="speaker(speaker.$stateParams())"
-                                            href="details/terence-carroll.html">
+                                            href="details/terence-carroll">
                                             <h4 class="color ng-binding">Terence Carroll</h4>
                                         </a>
                                         <p class="ng-binding">Software Engineer that strives to build beautiful things.
@@ -2811,7 +2811,7 @@
                         <div class="row">
                           
                             <div class="col-md-12 footer--contact">
-                                <a href="privacy.html">Privacy</a>
+                                <a href="privacy">Privacy</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a ng-href="#"
                                     href="#">Code of Conduct</a>

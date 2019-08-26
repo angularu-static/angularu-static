@@ -36,7 +36,7 @@
                                         <ul class="nav--list">
                                             <state-nav-item>
                                                 <li class="active">
-                                                    <a href="home.html">
+                                                    <a href="home">
                                                         <ng-transclude>
                                                             <span class="icon-home"></span><span
                                                                 class="sr-only ">Home</span>
@@ -47,7 +47,7 @@
                                             <!-- ngIf: pages.show('speakers') -->
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="speaker.html">
+                                                    <a href="speaker">
                                                         <ng-transclude><span class="active">
                                                                 Speakers
                                                             </span></ng-transclude>
@@ -57,7 +57,7 @@
                                             <!-- ngIf: pages.show('sessions') -->
                                             <state-nav-item class=" ng-isolate-scope">
                                                 <li>
-                                                    <a href="session.html">
+                                                    <a href="session">
                                                         <ng-transclude><span class="">
                                                                 Sessions
                                                             </span></ng-transclude>
@@ -66,7 +66,7 @@
                                             </state-nav-item>
                                             <state-nav-item state="overview">
                                                 <li>
-                                                    <a href="agenda.html">
+                                                    <a href="agenda">
                                                         <ng-transclude><span class="">
                                                                 Agenda
                                                             </span></ng-transclude>
@@ -78,10 +78,10 @@
                                                 <a href="#" class="nav--more">More</a>
                                                 <div class="nav--drop">
                                                     <ul class="nav--drop--list">
-                                                    <li><a href="videos.html">Videos</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
-                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    <li><a href="videos">Videos</a></li>
+                                                    <li><a href="news">News</a></li>
+                                                    <li><a href="communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight">Pluralsight Courses</a></li>
                                                     </ul>
                                                     <div class="social alt">
                                                     <h4>Follow us on: </h4>
@@ -113,13 +113,13 @@
                                             <a class="nav--user--name" href="#">login</a>
                                             <ul class="nav--list nav--user--list open" style="display:none">
                                                 <li>
-                                                    <a href="login.html">Login</a>
+                                                    <a href="login">Login</a>
                                                 </li>
                                                 <li>
-                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                    <a href="forgotPassword">Forgot Password</a>
                                                 </li>
                                                 <li>
-                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                    <a href="callForPapers">Call For Speakers</a>
                                                 </li>
                                                 <!-- <li ng-show="userNav.username" class="ng-hide">
                                                     <a href="/Account/Logout">Logout</a>
@@ -154,7 +154,7 @@
 
 
 
-                                    <a href="liveFeedNotify.html" class="btn btn-primary btn-lg xcenter-block">Sign Up
+                                    <a href="liveFeedNotify" class="btn btn-primary btn-lg xcenter-block">Sign Up
                                         to be
                                         Notified of Future Events</a>
 
@@ -162,7 +162,7 @@
 
                                     <!--<div class="col-sm-6 mb20">-->
                                     <!--<h3 class="type&#45;&#45;lead">Sign Up to be Notified of Future Events</h3>-->
-                                    <!--<a href="liveFeedNotify.html" class="btn btn-primary btn-lg">Sign up for the live feed</a>-->
+                                    <!--<a href="liveFeedNotify" class="btn btn-primary btn-lg">Sign up for the live feed</a>-->
                                     <!--</div>-->
                                     <!--<div class="col-sm-6">-->
                                     <!--<h3 class="type&#45;&#45;lead">Evening community event on June 23</h3>-->
@@ -234,7 +234,7 @@
                                                 </li>
                                             </ul>
 
-                                            <a href="videos.html">
+                                            <a href="videos">
                                                 <button class="btn btn-primary btn-full">View all the videos</button>
                                             </a>
                                         </div>
@@ -299,7 +299,7 @@
                                                 src="assets/images/speaker/20150218181456-31683.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/igor-minar.html">Igor Minar</a></h3>
+                                                href="details/igor-minar">Igor Minar</a></h3>
                                         <p class="ng-binding">
                                             Igor is a software engineer at Google. He is the lead of the AngularJS,
                                             practitioner of test driven development, open source enthusiast, hacker
@@ -316,7 +316,7 @@
                                                 src="assets/images/speaker/20150218182751-31682.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/misko-hevery.html">Misko Hevery</a></h3>
+                                                href="details/misko-hevery">Misko Hevery</a></h3>
                                         <p class="ng-binding">
                                             Miško Hevery is the creator of AngularJS framework. He has passion for
                                             making complex things simple.
@@ -333,7 +333,7 @@
                                                 src="assets/images/speaker/20150226040941-31684.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/brad-green.html">Brad Green</a></h3>
+                                                href="details/brad-green">Brad Green</a></h3>
                                         <p class="ng-binding">
                                             Brad is an engineering director at Google where he manages development of
                                             the AngularJS framework and Google's internal sales productivity products.
@@ -350,7 +350,7 @@
                                                 src="assets/images/speaker/20131213212414-1124.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/douglas-crockford.html">Douglas Crockford</a>
+                                                href="details/douglas-crockford">Douglas Crockford</a>
                                         </h3>
                                         <p class="ng-binding">
                                             Douglas Crockford discovered the JSON Data Interchange Format. He is also
@@ -369,7 +369,7 @@
                                                 src="assets/images/speaker/20150218183406-31704.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/jonathan-turner.html">Jonathan Turner</a></h3>
+                                                href="details/jonathan-turner">Jonathan Turner</a></h3>
                                         <p class="ng-binding">
                                             Programming language geek working at Microsoft on TypeScript. Previously
                                             worked on Clang/LLVM at Apple and Chapel at Cray.
@@ -386,7 +386,7 @@
                                                 src="assets/images/speaker/20150401180921-6548.jpg?format=jpg&amp;height=190&amp;width=290&amp;scale=both&amp;mode=pad&amp;Bgcolor=ffffff">
                                         </div>
                                         <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                href="details/steve-souders.html">Steve Souders</a></h3>
+                                                href="details/steve-souders">Steve Souders</a></h3>
                                         <p class="ng-binding">
                                             Steve works at SpeedCurve on the interplay between performance and design.
                                         </p>
@@ -594,7 +594,7 @@
                                                     src="assets/images/speaker/20131216053752-14842.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/dan-wahlin.html">Dan Wahlin</a></h3>
+                                                    href="details/dan-wahlin">Dan Wahlin</a></h3>
                                             <p class="ng-binding">
                                                 Google Developer Expert, MS Regional Director and MVP, Founder of Wahlin
                                                 Consulting, Udemy and Pluralsight author.
@@ -612,7 +612,7 @@
                                                     src="assets/images/speaker/20150218195858-31707.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/john-papa.html">John Papa</a></h3>
+                                                    href="details/john-papa">John Papa</a></h3>
                                             <p class="ng-binding">
                                                 Google Developer Expert, MS Regional Director, Adventures in Angular
                                                 podcast, &amp; Pluralsight author
@@ -630,7 +630,7 @@
                                                     src="assets/images/speaker/20150217195300-30649.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/peter-bacondarwin.html">Peter Bacon
+                                                    href="details/peter-bacondarwin">Peter Bacon
                                                     Darwin</a></h3>
                                             <p class="ng-binding">
                                                 AngularJS 1.x Development Lead and Dad
@@ -648,7 +648,7 @@
                                                     src="assets/images/speaker/20150330164034-32078.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/martin-gontovnikas.html">Martin
+                                                    href="details/martin-gontovnikas">Martin
                                                     Gontovnikas</a></h3>
                                             <p class="ng-binding">
                                                 Developer Advocate at Auth0. JS Lover. Creator of Restangular,
@@ -667,7 +667,7 @@
                                                     src="assets/images/speaker/20170609222924-30482.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/ben-drucker.html">Ben Drucker</a></h3>
+                                                    href="details/ben-drucker">Ben Drucker</a></h3>
                                             <p class="ng-binding">
                                                 JavaScript developer and open source advocate. Founder of Valet.io.
                                             </p>
@@ -684,7 +684,7 @@
                                                     src="assets/images/speaker/20150217222749-31690.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/david-east.html">David East</a></h3>
+                                                    href="details/david-east">David East</a></h3>
                                             <p class="ng-binding">
                                                 Developer Programs Engineer at Google. Full-time Firebase, Part-time
                                                 Angular.
@@ -702,7 +702,7 @@
                                                     src="assets/images/speaker/20150304005103-31783.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/joe-eames.html">Joe Eames</a></h3>
+                                                    href="details/joe-eames">Joe Eames</a></h3>
                                             <p class="ng-binding">
                                                 Pluralsight author, speaker, and organizer of ng-conf.
                                             </p>
@@ -719,7 +719,7 @@
                                                     src="assets/images/speaker/20150226041255-653.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/deborah-kurata.html">Deborah Kurata</a></h3>
+                                                    href="details/deborah-kurata">Deborah Kurata</a></h3>
                                             <p class="ng-binding">
                                                 Deborah Kurata is a developer, speaker, author, Microsoft MVP and Google
                                                 Developer Expert (GDE).
@@ -737,7 +737,7 @@
                                                     src="assets/images/speaker/20150306071243-31800.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/scott-moss.html">Scott Moss</a></h3>
+                                                    href="details/scott-moss">Scott Moss</a></h3>
                                             <p class="ng-binding">
                                                 Scott is an instructor and engineer with a passion for UI. He currently
                                                 works at Udacity in SF.
@@ -755,7 +755,7 @@
                                                     src="assets/images/speaker/20150226041500-31679.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/sara-robinson.html">Sara Robinson</a></h3>
+                                                    href="details/sara-robinson">Sara Robinson</a></h3>
                                             <p class="ng-binding">
                                                 Sara is a Developer Advocate and realtime aficionado on the Firebase
                                                 team at Google.
@@ -773,7 +773,7 @@
                                                     src="assets/images/speaker/20150306071301-31799.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/kyle-simpson.html">Kyle Simpson</a></h3>
+                                                    href="details/kyle-simpson">Kyle Simpson</a></h3>
                                             <p class="ng-binding">
                                                 Kyle Simpson is an Open Web Evangelist who's passionate about all things
                                                 JavaScript.
@@ -791,7 +791,7 @@
                                                     src="assets/images/speaker/20170609222929-32414.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/andreas-argelius.html">Andreas
+                                                    href="details/andreas-argelius">Andreas
                                                     Argelius</a></h3>
                                             <p class="ng-binding">
                                                 Andreas is a core developer on Onsen UI, an Angular based mobile app
@@ -810,7 +810,7 @@
                                                     src="assets/images/speaker/20150401183301-30676.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/demian-borba.html">Demian Borba</a></h3>
+                                                    href="details/demian-borba">Demian Borba</a></h3>
                                             <p class="ng-binding">
                                                 Developer Advocate at Braintree/PayPal focused on Web and UX, Surfer,
                                                 Design Thinker and Father.
@@ -828,7 +828,7 @@
                                                     src="assets/images/speaker/20170609223018-32802.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/terence-carroll.html">Terence Carroll</a>
+                                                    href="details/terence-carroll">Terence Carroll</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 Software Engineer that strives to build beautiful things. Loves Ionic
@@ -847,7 +847,7 @@
                                                     src="assets/images/speaker/20150408064802-4087.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/doris-chen.html">Doris Chen</a></h3>
+                                                    href="details/doris-chen">Doris Chen</a></h3>
                                             <p class="ng-binding">
                                                 Dr. Doris Chen is a Senior Technology Evangelist at Microsoft
                                                 specialized in web technologies.
@@ -865,7 +865,7 @@
                                                     src="assets/images/speaker/20150402192513-32148.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/jeanie-chung.html">Jeanie Chung</a></h3>
+                                                    href="details/jeanie-chung">Jeanie Chung</a></h3>
                                             <p class="ng-binding">
                                                 Engineer currently working on the Foundation team at ZURB. Chapter
                                                 Leader of GDI: Oakland.
@@ -883,7 +883,7 @@
                                                     src="assets/images/speaker/20170609223015-31688.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/andrew-connell.html">Andrew Connell</a>
+                                                    href="details/andrew-connell">Andrew Connell</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 Independent developer, speaker &amp; instructor focused on Azure, Office
@@ -902,7 +902,7 @@
                                                     src="assets/images/speaker/20150421191419-32182.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/justin-couto.html">Justin Couto</a></h3>
+                                                    href="details/justin-couto">Justin Couto</a></h3>
                                             <p class="ng-binding">
                                                 Justin Couto is the founder and CEO of SoCreate.
                                             </p>
@@ -919,7 +919,7 @@
                                                     src="assets/images/speaker/20150402193142-32038.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/rob-dodson.html">Rob Dodson</a></h3>
+                                                    href="details/rob-dodson">Rob Dodson</a></h3>
                                             <p class="ng-binding">
                                                 Developer Advocate at Google working with the Polymer and Chrome teams -
                                                 San Francisco, CA
@@ -937,7 +937,7 @@
                                                     src="assets/images/speaker/20150311175442-31791.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/tomomi-imura.html">Tomomi Imura</a></h3>
+                                                    href="details/tomomi-imura">Tomomi Imura</a></h3>
                                             <p class="ng-binding">
                                                 Tomomi is an avid open web advocate, currently working as an evangelist
                                                 at PubNub.
@@ -955,7 +955,7 @@
                                                     src="assets/images/speaker/20170609223013-225.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/jerry-kurata.html">Jerry Kurata</a></h3>
+                                                    href="details/jerry-kurata">Jerry Kurata</a></h3>
                                             <p class="ng-binding">
                                                 Jerry Kurata is a consultant specializing in full stack web, data
                                                 science, and IoT.
@@ -973,7 +973,7 @@
                                                     src="assets/images/speaker/20170609222930-8830.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/john-lindquist.html">John Lindquist</a>
+                                                    href="details/john-lindquist">John Lindquist</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 John is the head egg at egghead.io.
@@ -991,7 +991,7 @@
                                                     src="assets/images/speaker/20170609222746-34080.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/paul-pardi.html">Paul Pardi</a></h3>
+                                                    href="details/paul-pardi">Paul Pardi</a></h3>
                                             <p class="ng-binding">
                                                 A Senior Content Publishing Manager focused on developer content at
                                                 Microsoft Learning, Paul has worked at Microsoft for 15 years, with a
@@ -1010,7 +1010,7 @@
                                                     src="assets/images/speaker/20170609222838-31685.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/lukas-ruebbelke.html">Lukas Ruebbelke</a>
+                                                    href="details/lukas-ruebbelke">Lukas Ruebbelke</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 Developer. Hacker. Community backer. Author and blogger. Console logger.
@@ -1028,7 +1028,7 @@
                                                     src="assets/images/speaker/20150406163122-6220.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/justin-schwartzenberger.html">Justin
+                                                    href="details/justin-schwartzenberger">Justin
                                                     Schwartzenberger</a></h3>
                                             <p class="ng-binding">
                                                 Justin is a Lead Engineer at SoCreate building screenwriting software
@@ -1047,7 +1047,7 @@
                                                     src="assets/images/speaker/20170609223018-32056.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/patrick-stapleton.html">Patrick
+                                                    href="details/patrick-stapleton">Patrick
                                                     Stapleton</a></h3>
                                             <p class="ng-binding">
                                                 Creator of @AngularClass, Open-Source contributor, Previously @Keychain,
@@ -1066,7 +1066,7 @@
                                                     src="assets/images/speaker/20150605062811-34045.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/yuri-takheyev.html">Yuri Takheyev</a></h3>
+                                                    href="details/yuri-takheyev">Yuri Takheyev</a></h3>
                                             <p class="ng-binding">
                                                 Yuri Takhteyev is the CTO of Rangle.io, a JavaScript consulting firm
                                                 based out of Toronto.
@@ -1084,7 +1084,7 @@
                                                     src="assets/images/speaker/20150404021216-32162.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/travis-tidwell.html">Travis Tidwell</a>
+                                                    href="details/travis-tidwell">Travis Tidwell</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 An Open Source enthusiast, a M.E.A.N developer, and hacker of all
@@ -1103,7 +1103,7 @@
                                                     src="assets/images/speaker/20170609222921-32051.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/jeff-whelpley.html">Jeff Whelpley</a></h3>
+                                                    href="details/jeff-whelpley">Jeff Whelpley</a></h3>
                                             <p class="ng-binding">
                                                 Chief Architect at GetHuman, Angular Boston meetup co-organizer,
                                                 AngularAir panelist
@@ -1121,7 +1121,7 @@
                                                     src="assets/images/speaker/20180813211824-11388.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/aysegul-yonet.html">Aysegul Yonet</a></h3>
+                                                    href="details/aysegul-yonet">Aysegul Yonet</a></h3>
                                             <p class="ng-binding">
                                                 Aysegul is a Senior Software Engineer and Google Developer Expert in Web
                                                 Technologies and Angular
@@ -1139,7 +1139,7 @@
                                                     src="assets/images/speaker/20150211122105-2000.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/ward-bell.html">Ward Bell</a></h3>
+                                                    href="details/ward-bell">Ward Bell</a></h3>
                                             <p class="ng-binding">
                                                 Ward is president of IdeaBlade consultants &amp; makers of BreezeJS.
                                                 GDE, MS MVP, Angular expert
@@ -1157,7 +1157,7 @@
                                                     src="assets/images/speaker/20140730152136-18686.jpg?format=jpg&amp;height=75&amp;width=75&amp;scale=both&amp;mode=pad&amp;Bgcolor=f3f2f2">
                                             </div>
                                             <h3><a ui-sref="speaker(presenter.$stateParams)" class="ng-binding"
-                                                    href="details/joonas-lehtinen.html">Joonas Lehtinen</a>
+                                                    href="details/joonas-lehtinen">Joonas Lehtinen</a>
                                             </h3>
                                             <p class="ng-binding">
                                                 Dr. Joonas Lehtinen is the founder of Vaadin project, a Java-based
@@ -1446,7 +1446,7 @@
                             <!--</div>-->
                             <!--</div>-->
                             <div class="col-md-12 footer--contact">
-                                <a href="privacy.html">Privacy</a>
+                                <a href="privacy">Privacy</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a ng-href="#"
                                     href="#">Code of Conduct</a>
