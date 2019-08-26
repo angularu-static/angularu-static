@@ -36,7 +36,7 @@
                                         <ul class="nav--list">
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="home.html">
+                                                    <a href="home">
                                                         <ng-transclude>
                                                             <span class="icon-home"></span><span
                                                                 class="sr-only ">Home</span>
@@ -47,7 +47,7 @@
                                             <!-- ngIf: pages.show('speakers') -->
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="speaker.html">
+                                                    <a href="speaker">
                                                         <ng-transclude><span class="active">
                                                                 Speakers
                                                             </span></ng-transclude>
@@ -57,7 +57,7 @@
                                             <!-- ngIf: pages.show('sessions') -->
                                             <state-nav-item class=" ng-isolate-scope">
                                                 <li>
-                                                    <a href="session.html">
+                                                    <a href="session">
                                                         <ng-transclude><span class="">
                                                                 Sessions
                                                             </span></ng-transclude>
@@ -66,7 +66,7 @@
                                             </state-nav-item>
                                             <state-nav-item state="overview">
                                                 <li class="active">
-                                                    <a href="agenda.html">
+                                                    <a href="agenda">
                                                         <ng-transclude><span class="">
                                                                 Agenda
                                                             </span></ng-transclude>
@@ -78,10 +78,10 @@
                                                 <a href="#" class="nav--more">More</a>
                                                 <div class="nav--drop">
                                                     <ul class="nav--drop--list">
-                                                    <li><a href="videos.html">Videos</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
-                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    <li><a href="videos">Videos</a></li>
+                                                    <li><a href="news">News</a></li>
+                                                    <li><a href="communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight">Pluralsight Courses</a></li>
                                                     </ul>
                                                     <div class="social alt">
                                                     <h4>Follow us on: </h4>
@@ -113,13 +113,13 @@
                                             <a class="nav--user--name" href="#">login</a>
                                             <ul class="nav--list nav--user--list open" style="display:none">
                                                 <li>
-                                                    <a href="login.html">Login</a>
+                                                    <a href="login">Login</a>
                                                 </li>
                                                 <li>
-                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                    <a href="forgotPassword">Forgot Password</a>
                                                 </li>
                                                 <li>
-                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                    <a href="callForPapers">Call For Speakers</a>
                                                 </li>
                                                 <!-- <li ng-show="userNav.username" class="ng-hide">
                                                     <a href="/Account/Logout">Logout</a>
@@ -375,7 +375,7 @@
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
 
@@ -944,7 +944,7 @@
                                 <span ng-show="$index !== 0 &amp;&amp; tds.title.length > 0">
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
 
@@ -1074,7 +1074,7 @@
                                 <span ng-show="$index !== 0 &amp;&amp; tds.title.length > 0">
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
 
@@ -1139,7 +1139,7 @@
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -1205,7 +1205,7 @@
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -1272,7 +1272,7 @@
                                 <span ng-show="$index !== 0 &amp;&amp; tds.title.length > 0">
                                     <!--{{tds.title}}:{{$index}}:{{tds.sessionTrackName}}-->
                                     <div wh="" class="cal-entry" ng-show="tds.length != 0">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
 
@@ -1410,7 +1410,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1426,7 +1426,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -1443,7 +1443,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1460,7 +1460,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -1476,7 +1476,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1491,7 +1491,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1507,7 +1507,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -1523,7 +1523,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -1539,7 +1539,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1561,7 +1561,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1577,7 +1577,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -1594,7 +1594,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1611,7 +1611,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -1627,7 +1627,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1642,7 +1642,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1658,7 +1658,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -1674,7 +1674,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -1690,7 +1690,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1712,7 +1712,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1728,7 +1728,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -1745,7 +1745,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1762,7 +1762,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -1778,7 +1778,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1793,7 +1793,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1809,7 +1809,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -1825,7 +1825,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -1841,7 +1841,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1863,7 +1863,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1879,7 +1879,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -1896,7 +1896,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1913,7 +1913,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -1929,7 +1929,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1944,7 +1944,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -1960,7 +1960,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -1976,7 +1976,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -1992,7 +1992,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2014,7 +2014,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2030,7 +2030,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -2047,7 +2047,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2064,7 +2064,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -2080,7 +2080,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2095,7 +2095,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2111,7 +2111,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -2127,7 +2127,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -2143,7 +2143,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2165,7 +2165,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2181,7 +2181,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -2198,7 +2198,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2215,7 +2215,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -2231,7 +2231,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2246,7 +2246,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2262,7 +2262,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -2278,7 +2278,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -2294,7 +2294,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2316,7 +2316,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2332,7 +2332,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -2349,7 +2349,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2366,7 +2366,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -2382,7 +2382,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2397,7 +2397,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2413,7 +2413,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -2429,7 +2429,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -2445,7 +2445,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2467,7 +2467,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2483,7 +2483,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -2500,7 +2500,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2517,7 +2517,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -2533,7 +2533,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2548,7 +2548,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2564,7 +2564,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -2580,7 +2580,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -2596,7 +2596,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2618,7 +2618,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="angular-2-roadmap-update.html" target="_blank"
+                                                href="angular-2-roadmap-update" target="_blank"
                                                 class="ng-binding">Angular 2 Roadmap Update</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2634,7 +2634,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                                 target="_blank" class="ng-binding">Dan and John Bringing Their View On
                                                 The Latest In Angular</a>
                                         </h3>
@@ -2651,7 +2651,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run.html"
+                                        <h3 class="cal-entry-title"><a href="angular-2-speed-run"
                                                 target="_blank" class="ng-binding">Angular 2 Speed Run</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2668,7 +2668,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                                href="ng6-why-you-should-use-es6-with-angular-today"
                                                 target="_blank" class="ng-binding">ng6 Why You Should Use ES6 with
                                                 Angular Today</a>
                                         </h3>
@@ -2684,7 +2684,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2.html"
+                                        <h3 class="cal-entry-title"><a href="migrating-to-angular2"
                                                 target="_blank" class="ng-binding">Migrating to Angular2</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2699,7 +2699,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom.html"
+                                        <h3 class="cal-entry-title"><a href="dominating-shadow-dom"
                                                 target="_blank" class="ng-binding">Dominating Shadow DOM</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2715,7 +2715,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                                 target="_blank" class="ng-binding">HackStack.js: AngularJS Applications
                                                 Broken APIs Delivered Late</a>
                                         </h3>
@@ -2731,7 +2731,7 @@
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry ng-hide" ng-show="session.sessionTime === sessionTime">
                                         <h3 class="cal-entry-title"><a
-                                                href="get-mean-mongodb-express-angular-node.html"
+                                                href="get-mean-mongodb-express-angular-node"
                                                 target="_blank" class="ng-binding">Get MEAN! MongoDb + express + angular
                                                 + node</a>
                                         </h3>
@@ -2747,7 +2747,7 @@
                                 </li><!-- end ngRepeat: session in list.sessionOverviewMobile -->
                                 <li ng-repeat="session in list.sessionOverviewMobile" class="ng-scope">
                                     <div class="cal-entry" ng-show="session.sessionTime === sessionTime">
-                                        <h3 class="cal-entry-title"><a href="upgrading-the-web.html"
+                                        <h3 class="cal-entry-title"><a href="upgrading-the-web"
                                                 target="_blank" class="ng-binding">Upgrading the Web</a>
                                         </h3>
                                         <p class="cal-entry-time ng-binding">Ballroom EFG_</p>
@@ -2957,7 +2957,7 @@
                             <!--</div>-->
                             <!--</div>-->
                             <div class="col-md-12 footer--contact">
-                                <a href="privacy.html">Privacy</a>
+                                <a href="privacy">Privacy</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a ng-href="#"
                                     href="#">Code of Conduct</a>

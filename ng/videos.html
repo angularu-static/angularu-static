@@ -37,7 +37,7 @@
                                         <ul class="nav--list">
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="home.html">
+                                                    <a href="home">
                                                         <ng-transclude>
                                                             <span class="icon-home"></span><span
                                                                 class="sr-only ">Home</span>
@@ -48,7 +48,7 @@
                                             <!-- ngIf: pages.show('speakers') -->
                                             <state-nav-item>
                                                 <li>
-                                                    <a href="speaker.html">
+                                                    <a href="speaker">
                                                         <ng-transclude><span class="active">
                                                                 Speakers
                                                             </span></ng-transclude>
@@ -58,7 +58,7 @@
                                             <!-- ngIf: pages.show('sessions') -->
                                             <state-nav-item class=" ng-isolate-scope">
                                                 <li>
-                                                    <a href="session.html">
+                                                    <a href="session">
                                                         <ng-transclude><span class="">
                                                                 Sessions
                                                             </span></ng-transclude>
@@ -67,7 +67,7 @@
                                             </state-nav-item>
                                             <state-nav-item state="overview">
                                                 <li>
-                                                    <a href="agenda.html">
+                                                    <a href="agenda">
                                                         <ng-transclude><span class="">
                                                                 Agenda
                                                             </span></ng-transclude>
@@ -79,10 +79,10 @@
                                                 <a href="#" class="nav--more">More</a>
                                                 <div class="nav--drop">
                                                     <ul class="nav--drop--list">
-                                                    <li class="active"><a href="videos.html">Videos</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="communityEvent.html">Community Event 6/23</a></li>
-                                                    <li><a href="pluralsight.html">Pluralsight Courses</a></li>
+                                                    <li class="active"><a href="videos">Videos</a></li>
+                                                    <li><a href="news">News</a></li>
+                                                    <li><a href="communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="pluralsight">Pluralsight Courses</a></li>
                                                     </ul>
                                                     <div class="social alt">
                                                     <h4>Follow us on: </h4>
@@ -114,13 +114,13 @@
                                             <a class="nav--user--name" href="#">login</a>
                                             <ul class="nav--list nav--user--list open" style="display:none">
                                                 <li>
-                                                    <a href="login.html">Login</a>
+                                                    <a href="login">Login</a>
                                                 </li>
                                                 <li>
-                                                    <a href="forgotPassword.html">Forgot Password</a>
+                                                    <a href="forgotPassword">Forgot Password</a>
                                                 </li>
                                                 <li>
-                                                    <a href="callForPapers.html">Call For Speakers</a>
+                                                    <a href="callForPapers">Call For Speakers</a>
                                                 </li>
                                                 <!-- <li ng-show="userNav.username" class="ng-hide">
                                                     <a href="/Account/Logout">Logout</a>
@@ -167,7 +167,7 @@
                     <!-- ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="angular-2-roadmap-update.html"
+                        <h3><a class="type--color ng-binding" href="angular-2-roadmap-update"
                                 target="_blank">Angular 2 Roadmap Update</a></h3>
 
                         <div class="persona--img">
@@ -204,7 +204,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="angular-2-roadmap-update.html"
+                            <a class="persona--actions--expand" href="angular-2-roadmap-update"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -220,7 +220,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                 target="_blank">Dan and John Bringing Their View On The Latest In Angular</a></h3>
 
                         <div class="persona--img">
@@ -258,7 +258,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular.html"
+                                href="dan-and-john-bringing-their-view-on-the-latest-in-angular"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -274,7 +274,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="angular-2-speed-run.html"
+                        <h3><a class="type--color ng-binding" href="angular-2-speed-run"
                                 target="_blank">Angular 2 Speed Run</a></h3>
 
                         <div class="persona--img">
@@ -311,7 +311,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="angular-2-speed-run.html"
+                            <a class="persona--actions--expand" href="angular-2-speed-run"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -327,7 +327,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                href="ng6-why-you-should-use-es6-with-angular-today"
                                 target="_blank">ng6 Why You Should Use ES6 with Angular Today</a></h3>
 
                         <div class="persona--img">
@@ -365,7 +365,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="ng6-why-you-should-use-es6-with-angular-today.html"
+                                href="ng6-why-you-should-use-es6-with-angular-today"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -381,7 +381,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="migrating-to-angular2.html"
+                        <h3><a class="type--color ng-binding" href="migrating-to-angular2"
                                 target="_blank">Migrating to Angular2</a></h3>
 
                         <div class="persona--img">
@@ -418,7 +418,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="migrating-to-angular2.html"
+                            <a class="persona--actions--expand" href="migrating-to-angular2"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -433,7 +433,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="dominating-shadow-dom.html"
+                        <h3><a class="type--color ng-binding" href="dominating-shadow-dom"
                                 target="_blank">Dominating Shadow DOM</a></h3>
 
                         <div class="persona--img">
@@ -470,7 +470,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="dominating-shadow-dom.html"
+                            <a class="persona--actions--expand" href="dominating-shadow-dom"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -486,7 +486,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                 target="_blank">HackStack.js: AngularJS Applications Broken APIs Delivered Late</a></h3>
 
                         <div class="persona--img">
@@ -524,7 +524,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late.html"
+                                href="hackstackjs-angularjs-applications-broken-apis-delivered-late"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -540,7 +540,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                               href="get-mean-mongodb-express-angular-node.html" target="_blank">Get
+                               href="get-mean-mongodb-express-angular-node" target="_blank">Get
                                 MEAN! MongoDb + express + angular + node</a></h3>
 
                         <div class="persona--img">
@@ -578,7 +578,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="get-mean-mongodb-express-angular-node.html" target="_blank"><i
+                               href="get-mean-mongodb-express-angular-node" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
 
 
@@ -593,7 +593,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="upgrading-the-web.html"
+                        <h3><a class="type--color ng-binding" href="upgrading-the-web"
                                 target="_blank">Upgrading the Web</a></h3>
 
                         <div class="persona--img">
@@ -630,7 +630,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="upgrading-the-web.html"
+                            <a class="persona--actions--expand" href="upgrading-the-web"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -645,7 +645,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="typescript-and-angular-20.html"
+                        <h3><a class="type--color ng-binding" href="typescript-and-angular-20"
                                 target="_blank">TypeScript and Angular 2.0</a></h3>
 
                         <div class="persona--img">
@@ -682,7 +682,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="typescript-and-angular-20.html"
+                            <a class="persona--actions--expand" href="typescript-and-angular-20"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -697,7 +697,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="angular-2-server-rendering.html"
+                        <h3><a class="type--color ng-binding" href="angular-2-server-rendering"
                                 target="_blank">Angular 2 Server Rendering</a></h3>
 
                         <div class="persona--img">
@@ -734,7 +734,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="angular-2-server-rendering.html"
+                            <a class="persona--actions--expand" href="angular-2-server-rendering"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -749,7 +749,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="angular-2-forms.html"
+                        <h3><a class="type--color ng-binding" href="angular-2-forms"
                                 target="_blank">Angular 2 Forms </a></h3>
 
                         <div class="persona--img">
@@ -786,7 +786,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="angular-2-forms.html"
+                            <a class="persona--actions--expand" href="angular-2-forms"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -802,7 +802,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                               href="crazy-fast-prototyping-with-angularjs.html" target="_blank">Crazy
+                               href="crazy-fast-prototyping-with-angularjs" target="_blank">Crazy
                                 Fast Prototyping with AngularJS</a></h3>
 
                         <div class="persona--img">
@@ -840,7 +840,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="crazy-fast-prototyping-with-angularjs.html" target="_blank"><i
+                               href="crazy-fast-prototyping-with-angularjs" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
 
 
@@ -856,7 +856,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="building-office-365-spas-with-angular-and-cors.html"
+                                href="building-office-365-spas-with-angular-and-cors"
                                 target="_blank">Building Office 365 SPAs with Angular and CORS</a></h3>
 
                         <div class="persona--img">
@@ -894,7 +894,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="building-office-365-spas-with-angular-and-cors.html"
+                                href="building-office-365-spas-with-angular-and-cors"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -910,7 +910,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                               href="build-awesome-apps-with-firebase-angular.html" target="_blank">Build
+                               href="build-awesome-apps-with-firebase-angular" target="_blank">Build
                                 Awesome Apps with Firebase &amp; Angular</a></h3>
 
                         <div class="persona--img">
@@ -948,7 +948,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="build-awesome-apps-with-firebase-angular.html" target="_blank"><i
+                               href="build-awesome-apps-with-firebase-angular" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
 
 
@@ -963,7 +963,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="directives-in-angular-1-2-win.html"
+                        <h3><a class="type--color ng-binding" href="directives-in-angular-1-2-win"
                                 target="_blank">Directives in Angular: 1 + 2 = WIN</a></h3>
 
                         <div class="persona--img">
@@ -1001,7 +1001,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="directives-in-angular-1-2-win.html" target="_blank"><i
+                               href="directives-in-angular-1-2-win" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
 
 
@@ -1017,7 +1017,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="componentize-your-app-with-polymer-elements.html"
+                                href="componentize-your-app-with-polymer-elements"
                                 target="_blank">Componentize your app with Polymer Elements</a></h3>
 
                         <div class="persona--img">
@@ -1055,7 +1055,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="componentize-your-app-with-polymer-elements.html"
+                                href="componentize-your-app-with-polymer-elements"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1071,7 +1071,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html"
+                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular"
                                 target="_blank">Nifty SHAs of Code (or how get your stuff into Angular)</a></h3>
 
                         <div class="persona--img">
@@ -1109,7 +1109,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular.html"
+                                href="nifty-shas-of-code-or-how-get-your-stuff-into-angular"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1125,7 +1125,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="reusable-angular-components-with-browserify.html"
+                                href="reusable-angular-components-with-browserify"
                                 target="_blank">Reusable Angular Components with Browserify</a></h3>
 
                         <div class="persona--img">
@@ -1163,7 +1163,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="reusable-angular-components-with-browserify.html"
+                                href="reusable-angular-components-with-browserify"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1179,7 +1179,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="angular-cordova-monaca-killer-mobile-app-development.html"
+                                href="angular-cordova-monaca-killer-mobile-app-development"
                                 target="_blank">Angular + Cordova + Monaca = Killer mobile app development</a></h3>
 
                         <div class="persona--img">
@@ -1217,7 +1217,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="angular-cordova-monaca-killer-mobile-app-development.html"
+                                href="angular-cordova-monaca-killer-mobile-app-development"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1232,7 +1232,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="a-token-walks-into-a-spa.html"
+                        <h3><a class="type--color ng-binding" href="a-token-walks-into-a-spa"
                                 target="_blank">A Token Walks into a SPA…</a></h3>
 
                         <div class="persona--img">
@@ -1269,7 +1269,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="a-token-walks-into-a-spa.html"
+                            <a class="persona--actions--expand" href="a-token-walks-into-a-spa"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1285,7 +1285,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="making-money-with-phonegap-and-angular-apps.html"
+                                href="making-money-with-phonegap-and-angular-apps"
                                 target="_blank">Making money with Phonegap and Angular apps</a></h3>
 
                         <div class="persona--img">
@@ -1323,7 +1323,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="making-money-with-phonegap-and-angular-apps.html"
+                                href="making-money-with-phonegap-and-angular-apps"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1339,7 +1339,7 @@
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
                         <h3><a class="type--color ng-binding"
-                                href="the-mean-stack-and-the-rise-of-the-machines.html"
+                                href="the-mean-stack-and-the-rise-of-the-machines"
                                 target="_blank">The M.E.A.N stack and the rise of the machines</a></h3>
 
                         <div class="persona--img">
@@ -1377,7 +1377,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="the-mean-stack-and-the-rise-of-the-machines.html"
+                                href="the-mean-stack-and-the-rise-of-the-machines"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1392,7 +1392,7 @@
                     </div><!-- end ngRepeat: video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' -->
                     <div class="persona persona--video ng-scope"
                         ng-repeat="video in list.videosSessions | orderBy: 'sessionTimeDateTimeSort' ">
-                        <h3><a class="type--color ng-binding" href="designperformance.html"
+                        <h3><a class="type--color ng-binding" href="designperformance"
                                 target="_blank">Design+Performance</a></h3>
 
                         <div class="persona--img">
@@ -1429,7 +1429,7 @@
 
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="designperformance.html"
+                            <a class="persona--actions--expand" href="designperformance"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
 
 
@@ -1452,7 +1452,7 @@
                     <!-- ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u.html"
+                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u"
                                 target="_blank">Dan Wahlin Giving Us an Idea of What to Expect at Angular U</a></h3>
                         <div class="persona--img">
 
@@ -1480,7 +1480,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u.html"
+                                href="dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Dan+Wahlin+Giving+Us+an+Idea+of+What+to+Expect+at+Angular+U'+at+@AngularU+https://AngularU.com/Video/2015sf/dan-wahlin-giving-us-an-idea-of-what-to-expect-at-angular-u+@danwahlin"
@@ -1492,7 +1492,7 @@
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                               href="travis-tidwell-talking-about-mean-and-iot.html" target="_blank">Travis
+                               href="travis-tidwell-talking-about-mean-and-iot" target="_blank">Travis
                                 Tidwell Talking About MEAN and IOT</a></h3>
                         <div class="persona--img">
 
@@ -1520,7 +1520,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="travis-tidwell-talking-about-mean-and-iot.html" target="_blank"><i
+                               href="travis-tidwell-talking-about-mean-and-iot" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Travis++Tidwell+Talking+About+MEAN+and+IOT'+at+@AngularU+https://AngularU.com/Video/2015sf/travis-tidwell-talking-about-mean-and-iot+@softwaregnome"
@@ -1531,7 +1531,7 @@
                             and how it relates to the Internet of Things (IOT)</p>
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
-                        <h3><a class="type--color ng-binding" href="brad-green-talks-about-angular-u.html"
+                        <h3><a class="type--color ng-binding" href="brad-green-talks-about-angular-u"
                                 target="_blank">Brad Green Talks About Angular U</a></h3>
                         <div class="persona--img">
 
@@ -1558,7 +1558,7 @@
                         </div>
 
                         <div class="persona--actions">
-                            <a class="persona--actions--expand" href="brad-green-talks-about-angular-u.html"
+                            <a class="persona--actions--expand" href="brad-green-talks-about-angular-u"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Brad+Green+Talks+About+Angular+U'+at+@AngularU+https://AngularU.com/Video/2015sf/brad-green-talks-about-angular-u+@bradlygreen"
@@ -1570,7 +1570,7 @@
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                               href="ward-bell-talking-mean-session-preview.html" target="_blank">Ward Bell
+                               href="ward-bell-talking-mean-session-preview" target="_blank">Ward Bell
                                 Talking MEAN session preview</a></h3>
                         <div class="persona--img">
 
@@ -1598,7 +1598,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="ward-bell-talking-mean-session-preview.html" target="_blank"><i
+                               href="ward-bell-talking-mean-session-preview" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Ward+Bell+Talking+MEAN+session+preview'+at+@AngularU+https://AngularU.com/Video/2015sf/ward-bell-talking-mean-session-preview+@wardbell"
@@ -1609,7 +1609,7 @@
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                                href="scott-moss-talks-about-his-ecmascript6-workshops.html"
+                                href="scott-moss-talks-about-his-ecmascript6-workshops"
                                 target="_blank">Scott Moss Talks About His ECMAScript6 Workshops</a></h3>
                         <div class="persona--img">
 
@@ -1637,7 +1637,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                               href="scott-moss-talks-about-his-ecmascript6-workshops.html" target="_blank"><i
+                               href="scott-moss-talks-about-his-ecmascript6-workshops" target="_blank"><i
                                     class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Scott+Moss+Talks+About+His+ECMAScript6+Workshops'+at+@AngularU+https://AngularU.com/Video/2015sf/scott-moss-talks-about-his-ecmascript6-workshops+@scotups"
@@ -1649,7 +1649,7 @@
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                                href="misko-hevery-talks-about-databinding-in-angular-2.html"
+                                href="misko-hevery-talks-about-databinding-in-angular-2"
                                 target="_blank">Misko Hevery Talks About Databinding in Angular 2</a></h3>
                         <div class="persona--img">
 
@@ -1677,7 +1677,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="misko-hevery-talks-about-databinding-in-angular-2.html"
+                                href="misko-hevery-talks-about-databinding-in-angular-2"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Misko+Hevery+Talks+About+Databinding+in+Angular+2'+at+@AngularU+https://AngularU.com/Video/2015sf/misko-hevery-talks-about-databinding-in-angular-2+@mhevery"
@@ -1690,7 +1690,7 @@
                     </div><!-- end ngRepeat: video in list.videosPreConferences -->
                     <div class="persona persona--video ng-scope" ng-repeat="video in list.videosPreConferences ">
                         <h3><a class="type--color ng-binding"
-                                href="brad-green-talks-directives-controllers-become-components-in-angular-2.html"
+                                href="brad-green-talks-directives-controllers-become-components-in-angular-2"
                                 target="_blank">Brad Green Talks Directives, Controllers become Components in Angular
                                 2</a></h3>
                         <div class="persona--img">
@@ -1719,7 +1719,7 @@
 
                         <div class="persona--actions">
                             <a class="persona--actions--expand"
-                                href="brad-green-talks-directives-controllers-become-components-in-angular-2.html"
+                                href="brad-green-talks-directives-controllers-become-components-in-angular-2"
                                 target="_blank"><i class="icon-chain"></i>EXPAND</a>
                             <h4 class="persona--actions--text">Share on: </h4>
                             <a href="http://twitter.com/home?status=Check+Out+'Brad+Green+Talks+Directives,+Controllers+become+Components+in+Angular+2'+at+@AngularU+https://AngularU.com/Video/2015sf/brad-green-talks-directives-controllers-become-components-in-angular-2+@bradlygreen"
@@ -1873,7 +1873,7 @@
                             <!--</div>-->
                             <!--</div>-->
                             <div class="col-md-12 footer--contact">
-                                <a href="privacy.html">Privacy</a>
+                                <a href="privacy">Privacy</a>
                                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a ng-href="#"
                                     href="#">Code of Conduct</a>
