@@ -3218,7 +3218,8 @@
       overflow: hidden;
       margin-bottom: 10px; }
       .persona--img img {
-        width: 100%; }
+        width: 100%; 
+      height: inherit;}
     .persona--container {
       display: -webkit-flex;
       display: -ms-flexbox;
