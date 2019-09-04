@@ -1,0 +1,397 @@
+<html>
+
+<head>
+    <meta name="fragment" content="!">
+    <meta prerender-status-code="" name="prerender-status-code" content="200">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular U (An Angular Conference)</title>
+    <meta name="description"
+        content="An Angular Conference Covering Angular 1.x, 2, TypeScript, ECMAScript 6, Web Components and More. Who’s Who of Angular Presenters and Its Future">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/Images/favicons/mstile-144x144.png?v=636617354750179109">
+    <meta name="theme-color" content="#ffffff">
+    <link href="../../assets/scss/style.css" rel="stylesheet">
+    <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+</head>
+
+<body>
+    <!-- uiView:  -->
+    <div>
+        <!-- uiView: header -->
+        <div>
+            <main-nav>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <button class="nav--toggle icon-nav" id="nav--toggle">
+                                    <span class="icon-burger"></span>
+                                </button>
+<page-nav>
+                                    <ul class="nav--list">
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="../../home">
+                                                    <ng-transclude>
+                                                        <span class="icon-home"></span><span
+                                                            class="sr-only ">Home</span>
+                                                    </ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <!-- ngIf: pages.show('speakers') -->
+                                        <state-nav-item>
+                                            <li>
+                                                <a href="../../speaker">
+                                                    <ng-transclude><span class="active">
+                                                            Speakers
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('speakers') -->
+                                        <!-- ngIf: pages.show('sessions') -->
+                                        <state-nav-item class=" ng-isolate-scope">
+                                            <li>
+                                                <a href="../../session">
+                                                    <ng-transclude><span class="">
+                                                            Sessions
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item>
+                                        <state-nav-item state="overview">
+                                            <li>
+                                                <a href="../../agenda">
+                                                    <ng-transclude><span class="">
+                                                            Agenda
+                                                        </span></ng-transclude>
+                                                </a>
+                                            </li>
+                                        </state-nav-item><!-- end ngIf: pages.show('overview') -->
+
+                                                                                <li class="mobile-view"><a href="../../communityEvent">Community Event 6/23</a></li>
+                                        <li class="mobile-view"><a href="../../pluralsight">Pluralsight Courses</a></li>
+<li class="more-list">
+                                            <a href="#" class="nav--more">More</a>
+                                            <div class="nav--drop">
+                                                <ul class="nav--drop--list">
+                                                    <li><a href="../../videos">Videos</a></li>
+                                                    <li><a href="../../news">News</a></li>
+                                                    <li><a href="../../communityEvent">Community Event 6/23</a></li>
+                                                    <li><a href="../../pluralsight">Pluralsight Courses</a></li>
+                                                </ul>
+                                                <div class="social alt">
+                                                    <h4>Follow us on: </h4>
+                                                    <ul>
+                                                        <li><a href="http://twitter.com/angularu" target="_blank"
+                                                                class="icon-twitter"></a></li>
+                                                        <li><a href="https://www.facebook.com/angularu" target="_blank"
+                                                                class="icon-facebook"></a></li>
+                                                        <li><a href="https://plus.google.com/b/100446488804563546766/"
+                                                                target="_blank" class="icon-google-plus"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </page-nav>
+                            </div>
+                            <div class="col-md-7">
+                                <ticket-signup>
+                                    <div class="ping-tickets">
+
+
+                                        <!-- <a class="btn btn-primary ng-hide">
+                                                Buy Ticket
+                                            </a> -->
+                                        <!-- ngIf: ticket.hotelBookingUrl -->
+                                    </div>
+                                </ticket-signup>
+                                <user-nav class="ng-isolate-scope">
+                                    <div class="nav--user">
+                                        <button class="nav--user--toggle icon-user"></button>
+                                        <a class="nav--user--name" href="#">login</a>
+                                        <ul class="nav--list nav--user--list">
+                                            <li>
+                                                <a href="../../login">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="../../forgotPassword">Forgot Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="../../callForPapers">Call For Speakers</a>
+                                            </li>
+                                            <!-- <li ng-show="userNav.username" class="ng-hide">
+                                                    <a href="/Account/Logout">Logout</a>
+                                                </li> -->
+                                        </ul>
+                                    </div>
+                                </user-nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </main-nav>
+            <div class="body-bag ">
+                <section class="hero">
+                    <h1 class="hero--heading"><span class="brand--logo angular"></span>Angular U</h1>
+                    <!--<span ng-click="googleMap()" class="hero&#45;&#45;extra">June 22 to 25 2015 - Hyatt Regency, San&nbsp;Francisco Airport</span>-->
+                </section>
+            </div>
+        </div>
+
+        <div ui-view="" autoscroll="" class="">
+            <div id="speaker-details" class="container ">
+                <div class="separator">
+                    <span class="separator--icon icon-search"></span>
+                </div>
+                <h2 class="type--lead">Speaker details</h2>
+
+                <!-- Start code here -->
+                <div class="speaker-details row">
+                    <div class="speaker-details--image col-sm-3">
+                      <img ng-src="../../assets/images/speaker/20150306071301-31799.jpg" alt="Kyle Simpson" src="../../assets/images/speaker/20150306071301-31799.jpg">
+                      <div class="social center-block colored">
+                        <speaker-social-icons speaker="details.speaker" class="ng-isolate-scope"><ul>
+                  <!-- ngRepeat: network in social.networks --><!-- ngIf: social.has(network) --><li ng-repeat="network in social.networks" ng-if="social.has(network)" class="ng-scope">
+                    <a ng-href="http://twitter.com/getify" target="_blank" class="icon-twitter" href="http://twitter.com/getify"></a>
+                  </li><!-- end ngIf: social.has(network) --><!-- end ngRepeat: network in social.networks --><!-- ngIf: social.has(network) --><!-- end ngRepeat: network in social.networks --><!-- ngIf: social.has(network) --><li ng-repeat="network in social.networks" ng-if="social.has(network)" class="ng-scope">
+                    <a ng-href="https://plus.google.com/103205816011388489154/about" target="_blank" class="icon-google-plus" href="https://plus.google.com/103205816011388489154/about"></a>
+                  </li><!-- end ngIf: social.has(network) --><!-- end ngRepeat: network in social.networks --><!-- ngIf: social.has(network) --><li ng-repeat="network in social.networks" ng-if="social.has(network)" class="ng-scope">
+                    <a ng-href="http://www.linkedin.com/in/getify" target="_blank" class="icon-linkedin" href="http://www.linkedin.com/in/getify"></a>
+                  </li><!-- end ngIf: social.has(network) --><!-- end ngRepeat: network in social.networks -->
+                </ul>
+                </speaker-social-icons>
+                      </div>
+                
+                    </div>
+                    <div class="speaker-details--info col-sm-9">
+                      <section>
+                        <div class="heading">
+                          <h3 class="color ng-binding">Kyle Simpson</h3>
+                        </div>
+                        <h4 class="speaker-details--desc italic ng-binding">Kyle Simpson is an Open Web Evangelist who's passionate about all things JavaScript. </h4>
+                        <p speaker-bio="" speaker="details.speaker" class="ng-isolate-scope"><span ng-bind-html="bio.content" class="ng-binding">Kyle Simpson is an Open Web Evangelist from Austin, TX, who's passionate about all things JavaScript. He's an author, workshop trainer, tech speaker, and OSS contributor/leader.</span>
+                </p>
+                      </section>
+                
+                      <!-- ngIf: details.showSessions --><section ng-if="details.showSessions" class="ng-scope">
+                        <div class="heading">
+                          <h3 class="color">Sessions</h3>
+                        </div>
+                        <ul class="list--squared">
+                          <!-- ngRepeat: session in details.speaker.sessions --><li ng-repeat="session in details.speaker.sessions" class="ng-scope">
+                            <session-link session="session" class="ng-isolate-scope"><!-- ngIf: link.enabled --><span ng-if="link.enabled" class="ng-scope">
+                  <!-- ngIf: link.workshop --><span ng-if="link.workshop" class="ng-scope">
+                    <a ui-sref="workshop(link.session.$stateParams())" href="#">
+                      <ng-transclude>
+                              <h4 class="ng-binding ng-scope">Advanced JavaScript: Foundations</h4>
+                            </ng-transclude>
+                    </a>
+                  </span><!-- end ngIf: link.workshop -->
+                  <!-- ngIf: !link.workshop -->
+                </span><!-- end ngIf: link.enabled -->
+                <!-- ngIf: !link.enabled -->
+                </session-link>
+                            <div>
+                              <!-- ngIf: details.showSchedule --><span class="speaker-details--date ng-binding ng-scope" ng-if="details.showSchedule">
+                                Wednesday 9:00 AM to 4:00 PM
+                              </span><!-- end ngIf: details.showSchedule -->
+                              <span class="label label-default ng-binding">_Harbor AB</span>
+                            </div>
+                            <p description="description" for="session" class="ng-isolate-scope"><span ng-bind-html="description.content" class="list--squared ng-binding"><p>In this first day of our intensive course, we will dive deep into core mechanisms of the JS language, probably more than you ever have before. Our goal is to not merely understand what these things do, but how and why.</p>
+                
+                <p>We will cover:</p>
+                
+                <ul>
+                  <li>nested Lexical Scope </li>
+                
+                  <li>hoisting </li>
+                
+                  <li>closures </li>
+                
+                  <li>modules </li>
+                
+                  <li>'this' keyword </li>
+                
+                  <li>common oo patterns </li>
+                
+                  <li>object prototypes </li>
+                
+                  <li>delegation vs inheritance </li>
+                </ul>
+                
+                <p>The content of this course tracks roughly to the two "You Don't Know JS" books, "Scope &amp; Closures" and "this &amp; Object Prototypes". </p></span>
+                </p>
+                            <div class="inline-buttons text-small ng-hide" ng-hide="session.videoUrl == undefined">
+                              <a href="#" class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the video</a>
+                              <span class="btn btn-light">Recording of Live Stream From Conference</span>
+                            </div>
+                          </li><!-- end ngRepeat: session in details.speaker.sessions --><li ng-repeat="session in details.speaker.sessions" class="ng-scope">
+                            <session-link session="session" class="ng-isolate-scope"><!-- ngIf: link.enabled --><span ng-if="link.enabled" class="ng-scope">
+                  <!-- ngIf: link.workshop --><span ng-if="link.workshop" class="ng-scope">
+                    <a ui-sref="workshop(link.session.$stateParams())" href="#">
+                      <ng-transclude>
+                              <h4 class="ng-binding ng-scope">Advanced JavaScript: Rethinking Async</h4>
+                            </ng-transclude>
+                    </a>
+                  </span><!-- end ngIf: link.workshop -->
+                  <!-- ngIf: !link.workshop -->
+                </span><!-- end ngIf: link.enabled -->
+                <!-- ngIf: !link.enabled -->
+                </session-link>
+                            <div>
+                              <!-- ngIf: details.showSchedule --><span class="speaker-details--date ng-binding ng-scope" ng-if="details.showSchedule">
+                                Thursday 9:00 AM to 4:00 PM
+                              </span><!-- end ngIf: details.showSchedule -->
+                              <span class="label label-default ng-binding">Bayside AB</span>
+                            </div>
+                            <p description="description" for="session" class="ng-isolate-scope"><span ng-bind-html="description.content" class="list--squared ng-binding"><p>In this second day of our intensive course, we will dive deeply into the topic of asynchrony. First, we'll look at callbacks and see why they are functional but insufficient for managing async flow control in our complex modern applications. We'll identify the two major problems that make up "callback hell" (no, nothing to do with nesting/indentation!). </p>
+                
+                <p>Then, to clean up this mess, we'll look at two different ES6 mechanisms which each solve a different aspect of callback hell: generators and promises. We'll see that generators are about solving sync-looking async, while promises are about restoring trust to our continuations. And then we'll see how to compose promises with generators for solid async. </p>
+                
+                <p>After gaining a firm grasp over these reinvented async methodologies, then we'll look some at higher-order async patterns, and learn ways of identifying when and where to apply them: </p>
+                
+                <ul>
+                <li>iterable sequences</li>
+                <li>streams (reactive)</li>
+                <li>CSP (channel-based concurrency)</li>
+                <li>etc.</li>
+                </ul>
+                
+                <p>To wrangle all these different async abstractions, we'll practice the exercises with the "asynquence" library. </p>
+                
+                <p>Prerequistes: Day 1 "Advanced JavaScript" course, and/or 2-3 years of solid core JS experience.</p></span>
+                </p>
+                            <div class="inline-buttons text-small ng-hide" ng-hide="session.videoUrl == undefined">
+                              <a href="#" class="btn btn-primary uppercase"><i class="icon-camera"></i> Watch the video</a>
+                              <span class="btn btn-light">Recording of Live Stream From Conference</span>
+                            </div>
+                          </li><!-- end ngRepeat: session in details.speaker.sessions -->
+                        </ul>
+                      </section><!-- end ngIf: details.showSessions -->
+                
+                    </div>
+                  </div>
+
+                <!-- End code here -->
+            </div>
+        </div>
+        <!-- uiView: footer -->
+        <div ui-view="footer" class="">
+            <div id="sponsors" class="nav--section container ">
+                <div class="separator">
+                    <span class="separator--icon icon-heart"></span>
+                </div>
+
+
+                <h2 class="type--lead">Premiere Sponsor</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--premiere">
+                        <a href="http://rangle.io/" target="_blank"><img class="sponsor--img" alt="Rangle.io"
+                                src="https://angularu.com/content/ng/angu/images/rangleio-logo-rgb.jpg"></a>
+                    </li>
+                </ul>
+
+
+
+                <h2 class="type--lead">Gold Sponsors</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="http://form.io/" target="_blank" href="http://form.io/"><img class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/formio-logo-full.png" alt="formio"
+                                src="https://angularu.com/content/ng/angu/images/formio-logo-full.png"></a>
+                    </li>
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="http://orcsweb.com/" target="_blank" href="http://orcsweb.com/"><img
+                                class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/orcsweb.png"
+                                alt="Orcsweb" src="https://angularu.com/content/ng/angu/images/orcsweb.png"></a>
+                    </li>
+
+                    <li class="sponsor sponsor--gold">
+                        <a ng-href="https://microsoft.com" target="_blank" href="https://microsoft.com"><img
+                                class="sponsor--img" ng-src="https://angularu.com/content/ng/angu/images/mslogo.png"
+                                alt="Microsoft" src="https://angularu.com/content/ng/angu/images/mslogo.png"></a>
+                    </li>
+
+                </ul>
+
+                <h2 class="type--lead">Silver Sponsors</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="http://pluralsight.com/" target="_blank" href="http://pluralsight.com/"><img
+                                class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png"
+                                alt="Puralsight"
+                                src="https://angularu.com/content/ng/angu/images/pluralsight-141-90.png"></a>
+                    </li>
+
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="https://developers.braintreepayments.com" target="_blank"
+                            href="https://developers.braintreepayments.com"><img class="sponsor--img"
+                                ng-src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png"
+                                alt="Braintree PayPal"
+                                src="https://angularu.com/content/ng/angu/images/Braintree_Master_Logo_Crop.png"></a>
+                    </li>
+                </ul>
+
+                <h2 class="type--lead">Media Partners</h2>
+                <ul class="sponsor--list">
+                    <li class="sponsor sponsor--silver">
+                        <a ng-href="https://www.airpair.com/angularjs " target="_blank"
+                            href="https://www.airpair.com/angularjs"><img class="sponsor--img"
+                                ng-src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250"
+                                alt="AirPair"
+                                src="https://angularu.com/sponsorimage/20140724233256-877.jpg?format=jpg&amp;width=250"></a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a ng-href="mailto:sponsor@angularu.com" class="btn btn-primary btn-lg"
+                        href="mailto:sponsor@angularu.com">Become a sponsor</a>
+                </div>
+            </div>
+
+            <footer class="footer ">
+                <div class="footer--top">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12 footer--contact">
+                                <a href="../../privacy">Privacy</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <a ng-href="#" href="#">Code of Conduct</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <a ng-href="mailto:service2015@angularu.com"
+                                    href="mailto:service2015@angularu.com">Contact us</a>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <div class="social alt">
+                                    <h4>Follow us on:</h4>
+                                    <ul>
+                                        <li><a ng-href="http://twitter.com/angularu" target="_blank"
+                                                class="icon-twitter" href="http://twitter.com/angularu"></a></li>
+                                        <li><a ng-href="https://www.facebook.com/angularu" target="_blank"
+                                                class="icon-facebook" href="https://www.facebook.com/angularu"></a></li>
+                                        <li><a ng-href="https://plus.google.com/u/0/communities/100721362580915494668"
+                                                target="_blank" class="icon-google-plus"
+                                                href="https://plus.google.com/u/0/communities/100721362580915494668"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
