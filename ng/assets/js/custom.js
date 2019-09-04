@@ -12,7 +12,8 @@ $('document').ready(function(){
         $(this).addClass('open-menu');
     });
 
-    $('.open-menu').click(function() {
+    $(body).on('.open-menu').click(function() {
+        debugger
         $('page-nav ul.nav--list').removeClass('open');
         $('#nav--toggle').removeClass('open-menu');
     })
