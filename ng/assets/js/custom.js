@@ -7,3 +7,9 @@ $('document').ready(function(){
         $('.nav--user--list').toggle();
     })
 });
+
+onOpenResponsiveMenu() {
+    $('document').ready(function(){
+     $('.nav--list').addClass('open');
+    });
+}
