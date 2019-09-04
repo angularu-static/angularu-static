@@ -6172,4 +6172,7 @@ body {
   .mobile-view {
     display: block !important;
   }
+  .nav--more {
+    display: none !important;
+  }
 }
