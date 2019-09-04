@@ -8,12 +8,12 @@ $('document').ready(function(){
     })
 
     $('#nav--toggle').click(function() {
-        $('.nav--list').addClass('open');
+        $('page-nav ul.nav--list').addClass('open');
         $(this).addClass('open-menu');
     });
 
     $('#nav--toggle.open-menu').click(function() {
-        $('.nav--list').removeClass('open');
+        $('page-nav ul.nav--list').removeClass('open');
         $('#nav--toggle').removeClass('open-menu');
     })
 });
