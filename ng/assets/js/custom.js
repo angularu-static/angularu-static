@@ -7,13 +7,14 @@ $('document').ready(function(){
         $('.nav--user--list').toggle();
     })
 
-    $('body').on('click', '.open-menu', function() {
+    $('body').on('click', '#nav--toggle.open-menu', function() {
         debugger
         $('page-nav ul.nav--list').removeClass('open');
         $('#nav--toggle').removeClass('open-menu');
     })
 
     $('#nav--toggle').click(function() {
+        debugger
         $('page-nav ul.nav--list').addClass('open');
         $(this).addClass('open-menu');
     });
