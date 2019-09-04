@@ -12,7 +12,7 @@ $('document').ready(function(){
         $(this).addClass('open-menu');
     });
 
-    $('#nav--toggle.open-menu').click(function() {
+    $('.open-menu').click(function() {
         $('page-nav ul.nav--list').removeClass('open');
         $('#nav--toggle').removeClass('open-menu');
     })
