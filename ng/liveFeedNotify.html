@@ -400,58 +400,17 @@
                 </div>
                 <br />
 
-                <div id="captchaid" class="col-sm-8 col-centered ">
-                  <script type="text/javascript">
-                    var RecaptchaOptions = {
-                      theme: "white" // Make sure there is no trailing ',' at the end of the RecaptchaOptions dictionary
-                    };
-                  </script>
-
-                  <script
-                    type="text/javascript"
-                    src="https://www.google.com/recaptcha/api/challenge?k=6LcrXN4SAAAAAG4gTUSUCzyfaFE4-yJOIXq86PdW"
-                  ></script>
-                  <noscript>
-                    <iframe
-                      src="https:://www.google.com/recaptcha/api/noscript?k=6LcrXN4SAAAAAG4gTUSUCzyfaFE4-yJOIXq86PdW"
-                      height="300"
-                      width="500"
-                      frameborder="0"
-                    ></iframe>
-                    <br />
-                    <textarea
-                      name="recaptcha_challenge_field"
-                      rows="3"
-                      cols="40"
-                    ></textarea>
-                    <input
-                      type="hidden"
-                      name="recaptcha_response_field"
-                      value="manual_challenge"
-                    />
-                  </noscript>
-
-                  <br />
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary" id="sendMessageButtonxxx">Send</button>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LdUIbcUAAAAABjv3-v5Y9coWrg7yBT57KetkvRk"></div>
 
-<!--                <div class="form-group">-->
-<!--                  <div class="col-sm-8 col-centered">-->
-<!--                    <button-->
-<!--                      id="saveOnly"-->
-<!--                      type="button"-->
-<!--                      class="btn btn-primary btn-lg xcenter-block"-->
-<!--                    >-->
-<!--                      Save-->
-<!--                    </button>-->
-<!--                  </div>-->
-<!--                </div>-->
 
-                <hr />
-                <div></div>
               </div>
             </div>
           </div>
-            <div class="g-recaptcha" data-sitekey="6LdUIbcUAAAAABjv3-v5Y9coWrg7yBT57KetkvRk"></div>
         </form>
       </div>
     </div>
